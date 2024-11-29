@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Fit</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="logo">Card Fit</div>
+    <nav>
+      <ul>
+        <li><a href="#">20대 추천 카드</a></li>
+        <li><a href="#">정부 지원 카드</a></li>
+        <li><a href="#">퍼스널 맞춤 카드</a></li>
+        <li><a href="#">이달의 이벤트</a></li>
+      </ul>
+    </nav>
+    <div class="user-icon">
+      <img src="/images/avatar.png" alt="User Icon">
+    </div>
+  </header>
+
+  <!-- 슬라이더 -->
+  <section class="slider">
+    <h2>20대 청년들을 위한 카드 확인하기</h2>
+    <div class="slider-content">
+      <button class="slider-btn prev">◀</button>
+      <div class="slider-image">
+        <img src="/images/banner.jpg" alt="슬라이더 배너">
+      </div>
+      <button class="slider-btn next">▶</button>
+    </div>
+  </section>
+
+  <!-- 카드 섹션 -->
+  <main>
+    <section class="card-section">
+      <h3>20대 추천 혜택 <button class="view-all">전체보기</button></h3>
+      <div class="card-grid">
+        <div class="card">카드1</div>
+        <div class="card">카드2</div>
+        <div class="card">카드3</div>
+        <div class="card">카드4</div>
+      </div>
+    </section>
+    
+    <section class="card-section">
+      <h3>정부 지원 혜택 <button class="view-all">전체보기</button></h3>
+      <div class="card-grid">
+        <div class="card">카드1</div>
+        <div class="card">카드2</div>
+        <div class="card">카드3</div>
+        <div class="card">카드4</div>
+      </div>
+    </section>
+
+    <section class="card-section">
+      <h3>퍼스널 맞춤 혜택 <button class="view-all">전체보기</button></h3>
+      <div class="card-grid">
+        <div class="card">카드1</div>
+        <div class="card">카드2</div>
+        <div class="card">카드3</div>
+        <div class="card">카드4</div>
+      </div>
+    </section>
+
+    <section class="card-section">
+      <h3>이달의 이벤트 <button class="view-all">전체보기</button></h3>
+      <div class="card-grid">
+        <div class="card">카드1</div>
+        <div class="card">카드2</div>
+        <div class="card">카드3</div>
+        <div class="card">카드4</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 챗봇 -->
+  <script>
+    !function(w, d, s, ...args){
+      var div = d.createElement('div');
+      div.id = 'aichatbot';
+      d.body.appendChild(div);
+      w.chatbotConfig = args;
+      var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s);
+      j.defer = true;
+      j.type = 'module';
+      j.src = 'https://aichatbot.sendbird.com/index.js';
+      f.parentNode.insertBefore(j, f);
+    }(window, document, 'script', '2480CFFF-E77B-4D77-A357-47E66D1096B1', 'onboarding_bottest2', {
+      apiHost: 'https://api-cf-ap-2.sendbird.com',
+    });
+    </script>
+
+  <!-- 푸터 -->
+  <footer>
+    <p>202135579 최형록</p>
+    <p>202035191 이경준</p>
+    <p>202035204 이승민</p>
+    <p>202035226 전준혁</p>
+  </footer>
+</body>
+</html>
