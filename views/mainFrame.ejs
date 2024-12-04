@@ -137,14 +137,30 @@
             <!-- 하단 정보 -->
             <div class="element-wrapper">
                 <p class="element">
+                    202035204 이경준<br />
                     202035204 이승민<br />
-                    202035204 이승민<br />
-                    202035204 이승민<br />
-                    202035204 이승민
+                    202035204 전준혁<br />
+                    202035204 최형록
                 </p>
             </div>
 
-            <img class="muhan" src="img/muhan-1.png" />
+            <!-- 챗봇 -->
+            <script>
+                !function(w, d, s, ...args){
+                  var div = d.createElement('div');
+                  div.id = 'aichatbot';
+                  d.body.appendChild(div);
+                  w.chatbotConfig = args;
+                  var f = d.getElementsByTagName(s)[0],
+                  j = d.createElement(s);
+                  j.defer = true;
+                  j.type = 'module';
+                  j.src = 'https://aichatbot.sendbird.com/index.js';
+                  f.parentNode.insertBefore(j, f);
+                }(window, document, 'script', '2480CFFF-E77B-4D77-A357-47E66D1096B1', 'onboarding_bottest2', {
+                  apiHost: 'https://api-cf-ap-2.sendbird.com',
+                });
+            </script>
 
             <!-- 네비게이션 바 -->
             <div class="navbar-wrapper">
