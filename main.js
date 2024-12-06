@@ -13,6 +13,7 @@ app.set('views', path.join(__dirname, 'views'));
 // public 디렉토리를 정적 경로로 설정
 app.use('/img', express.static(path.join(__dirname, 'public/img')));
 app.use('/css', express.static(path.join(__dirname, 'public/css')));
+app.use('/js', express.static(path.join(__dirname, 'public/js')));
 app.use(express.static(path.join(__dirname, 'public'))); // 추가로 public 폴더 자체도 정적 경로로 제공
 
 // 라우터 연결
