@@ -7,7 +7,7 @@ const saveToDatabase = require('./carddb');
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
 
-        // 크롤링할 URL 목록
+        //  크롤링할 URL 목록
         const urls = [
             'https://card-gorilla.com/card/detail/2752', // 첫 번째 카드 URL
             'https://card-gorilla.com/card/detail/2683', // 두 번째 카드 URL
