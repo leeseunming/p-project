@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const port = 3000;
+const rootRouter = require('./router/rootRouter');
 
 // 라우터 불러오기
 const indexRouter = require('./router/rootRouter');
@@ -15,9 +17,13 @@ app.use('/img', express.static(path.join(__dirname, 'public/img')));
 app.use('/css', express.static(path.join(__dirname, 'public/css')));
 app.use('/js', express.static(path.join(__dirname, 'public/js')));
 app.use(express.static(path.join(__dirname, 'public'))); // 추가로 public 폴더 자체도 정적 경로로 제공
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 
 // 라우터 연결
 app.use('/', indexRouter);
+app.use('/', rootRouter);
 
 // 404 에러 처리
 app.use((req, res, next) => {
