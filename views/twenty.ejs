@@ -1,0 +1,41 @@
+<div class="twenty">
+  <div class="twenty-page">
+    <div class="twenty-overlap">
+      <div class="twenty-group">
+        <% cards.forEach(card => { %>
+        <div class="twenty-overlap-group">
+          <!-- 카드 이미지 -->
+          <img class="twenty-image" src="<%= card.image_url || 'img/card-placeholder.png' %>" alt="카드 이미지" />
+
+          <!-- 카드 이름 -->
+          <div class="twenty-text-wrapper"><%= card.card_name %></div>
+
+          <!-- 카드 세부 정보 -->
+          <div class="twenty-div">
+            <div class="twenty-overlap-2">
+              <p class="twenty-p">
+                <span class="twenty-span">전월실적<br /></span> 
+                <span class="twenty-text-wrapper-2"><%= card.monthly_spending_requirement || '조건 없음' %></span>
+              </p>
+              <p class="twenty-div-2">
+                <span class="twenty-span">연회비<br /></span>
+                <span class="twenty-text-wrapper-2"><%= card.annual_fee %></span>
+              </p>
+              <div class="twenty-rectangle-2"></div>
+              <div class="twenty-text-wrapper-4">상세보기</div>
+            </div>
+
+            <!-- 혜택 표시 -->
+            <div class="twenty-text-wrapper-5">주요 혜택</div>
+            <div class="twenty-element-CGV">
+              <% card.benefit.split(',').forEach(benefit => { %>
+              <div class="twenty-benefit-item"><%= benefit.trim() %></div>
+              <% }); %>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</div>
