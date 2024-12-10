@@ -732,7 +732,6 @@ body {
   width: 242px;
   height: 97px;
   background-color: #fcfcfc;
-  box-shadow: 0px 4px 0px #000000;
 }
 
 .main .rectangle-23 {
@@ -1624,4 +1623,48 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+}
+
+/* 기본 네비게이션 스타일 - box-shadow 없음 */
+.main .rectangle-22,
+.main .rectangle-23,
+.main .rectangle-24,
+.main .rectangle-25,
+.main .rectangle-26 {
+  position: relative;
+  width: 242px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+.main .rectangle-27{
+  position: relative;
+  width: 242px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+
+/* URL에 따른 box-shadow 적용 */
+/* 홈 */
+body[data-page="/"] .rectangle-22 {
+  box-shadow: 0px 4px 0px #000000;
+}
+
+/* 20대 추천 카드 */
+body[data-page="/twenty"] .rectangle-23 {
+  box-shadow: 13px 4px 0px #000000;
+}
+
+/* 정부 지원 카드 */
+body[data-page="/gov"] .rectangle-24 {
+  box-shadow: 12px 4px 0px #000000;
+}
+
+/* 퍼스널 맞춤 카드 */
+body[data-page="/personal"] .rectangle-25 {
+  box-shadow: 25px 4px 0px #000000;
+}
+
+/* 이달의 이벤트 */
+body[data-page="/event"] .rectangle-26 {
+  box-shadow: 15px 4px 0px #000000;
 }
