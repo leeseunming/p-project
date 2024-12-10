@@ -882,7 +882,7 @@ body {
 
 /* twenty.ejs 스타일 계속 */
 .twenty .twenty-group {
-  top: 1506px;
+  top: 506px !important;
   left: 212px;
   position: absolute;
   width: 1039px;
@@ -967,7 +967,12 @@ body {
 .twenty .twenty-text-wrapper-2 {
   color: #626262;
   font-size: 16px;
-  display: inline-block; /* 일관된 블록 처리 */
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  position: relative;
+  left: -25px;
+  text-align: center;
 }
 
 .twenty .twenty-div-2 {
@@ -1013,7 +1018,7 @@ body {
   width: 95px;
   height: 49px;
   top: 13px;
-  left: 316px;
+  left: 300px;
   color: #000000;
   font-size: 20px;
   position: absolute;
@@ -1027,7 +1032,7 @@ body {
 .twenty .twenty-element-CGV {
   position: absolute;
   width: 600px;
-  top: 88px;
+  top: 60px !important;
   left: 50px;
   font-family: 'GmarketSansMedium', sans-serif;
   font-weight: 800;
@@ -1037,21 +1042,15 @@ body {
   line-height: 2.5;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-}
-
-.twenty .twenty-benefit-row {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 5px 0;
+  align-items: center;
+  gap: 0px;
 }
 
 .twenty .twenty-benefit-item {
-  width: 180px;
+  width: 100%;
   text-align: center;
+  padding: 3px 0;
   white-space: nowrap;
-  font-family: 'GmarketSansMedium', sans-serif;
 }
 
 .twenty .twenty-rectangle-3 {
@@ -1087,7 +1086,7 @@ body {
 .twenty .twenty-text-wrapper-6 {
   width: 276px;
   height: 70px;
-  top: 148px;
+  top: 168px;
   left: 160px;
   color: #000000;
   font-size: 32px;
@@ -1102,7 +1101,7 @@ body {
 .twenty .twenty-text-wrapper-7 {
   width: 276px;
   height: 70px;
-  top: 148px;
+  top: 168px;
   left: 476px;
   color: #848484;
   font-size: 32px;
@@ -1354,7 +1353,7 @@ body {
 }
 
 .twenty-page .twenty-p {
-  width: 136px;
+  width: 96px;
   top: 0;
   left: 0;
   color: transparent;
@@ -1377,7 +1376,7 @@ body {
 }
 
 .twenty-page .twenty-div-2 {
-  width: 215px;
+  width: 255px;
   top: 0;
   left: 228px;
   color: transparent;
@@ -1424,7 +1423,7 @@ body {
   width: 95px;
   height: 49px;
   top: 13px;
-  left: 316px;
+  left: 300px;
   color: #000000;
   font-size: 20px;
   position: absolute;
@@ -1667,4 +1666,11 @@ body[data-page="/personal"] .rectangle-25 {
 /* 이달의 이벤트 */
 body[data-page="/event"] .rectangle-26 {
   box-shadow: 15px 4px 0px #000000;
+}
+
+.twenty .twenty-div-2 .twenty-text-wrapper-2 {
+  position: relative;
+  left: 0;  /* -27px에서 0으로 변경 */
+  transform: translateX(-50%);  /* 가운데 정렬을 위해 추가 */
+  margin-left: 44%;  /* 가운데 정렬을 위해 추가 */
 }
