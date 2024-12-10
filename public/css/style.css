@@ -1,0 +1,1738 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.main {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.main .div {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 3124px;
+  position: relative;
+}
+
+.main .div .home-content2 {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 0px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.main .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 2101px;
+  top: 838px;
+  left: 1px;
+  background-color: #fdfdfd;
+  box-shadow: 0px 4px 4px #00000029;
+}
+
+.main .overlap-group {
+  position: absolute;
+  width: 1220px;
+  height: 489px;
+  top: 54px;
+  left: 109px;
+}
+
+.main .rectangle {
+  position: absolute;
+  width: 1220px;
+  height: 478px;
+  top: 11px;
+  left: 0;
+  background-color: #f1f1f19c;
+  border-radius: 50px;
+}
+
+.main .text-wrapper {
+  position: relative;
+  top: 20px;
+  width: 277px;
+  height: 117px;
+  left: 78px;
+  color: #000000;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.main .overlap-2 .text-wrapper {
+  top: 9px; /* "정부 지원 혜택"만 위로 이동 */
+}
+
+.main .rectangle-2 {
+  position: absolute;
+  width: 127px;
+  height: 43px;
+  top: 52px;
+  left: 1006px;
+  background-color: #f9c10b;
+  border-radius: 50px;
+}
+
+.main .text-wrapper-2 {
+  position: relative;
+  top: -55px;
+  width: 127px;
+  height: 47px;
+  left: 1006px;
+  color: #070606;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.main .text-wrapper-2-twenty {
+  position: relative;
+  top: -55px;
+  width: 127px;
+  height: 47px;
+  left: 1031px;  /* 다른 위치 값 사용 */
+  color: #070606;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.main .rectangle-3 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 106px;
+  left: 61px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-4 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 106px;
+  left: 351px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-5 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 106px;
+  left: 643px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-6 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 106px;
+  left: 931px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .card {
+  top: 139px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 89px;
+  object-fit: cover;
+}
+
+.main .img {
+  top: 139px;
+  position: absolute;
+  width: 174px;
+  height: 278px;
+  left: 959px;
+  object-fit: cover;
+}
+
+.main .card-2 {
+  top: 139px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 669px;
+  object-fit: cover;
+}
+
+.main .card-3 {
+  top: 139px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 379px;
+  object-fit: cover;
+}
+
+.main .text-wrapper-3 {
+  width: 105px;
+  height: 43px;
+  top: 420px;
+  left: 124px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-4 {
+  left: 414px;
+  position: absolute;
+  width: 105px;
+  height: 43px;
+  top: 420px;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-5 {
+  left: 704px;
+  position: absolute;
+  width: 105px;
+  height: 43px;
+  top: 420px;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-6 {
+  left: 994px;
+  position: absolute;
+  width: 105px;
+  height: 43px;
+  top: 420px;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .overlap-2 {
+  position: absolute;
+  width: 1220px;
+  height: 479px;
+  top: 574px;
+  left: 109px;
+}
+
+.main .rectangle-7 {
+  position: absolute;
+  width: 1220px;
+  height: 478px;
+  top: 1px;
+  left: 0;
+  background-color: #f1f1f19c;
+  border-radius: 50px;
+}
+
+.main .rectangle-8 {
+  position: absolute;
+  width: 127px;
+  height: 43px;
+  top: 53px;
+  left: 1006px;
+  background-color: #f9c20b;
+  border-radius: 50px;
+}
+
+.main .text-wrapper-7 {
+  width: 127px;
+  height: 47px;
+  top: 50px;
+  left: 1006px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .overlap-3 {
+  position: absolute;
+  width: 1220px;
+  height: 489px;
+  top: 1074px;
+  left: 109px;
+}
+
+.main .rectangle-9 {
+  position: absolute;
+  width: 127px;
+  height: 43px;
+  top: 52px;
+  left: 1006px;
+  background-color: #f9c20b;
+  border-radius: 50px;
+}
+
+.main .text-wrapper-8 {
+  width: 127px;
+  height: 47px;
+  top: 49px;
+  left: 1006px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .rectangle-10 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 107px;
+  left: 61px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-11 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 107px;
+  left: 351px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-12 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 107px;
+  left: 643px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-13 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 107px;
+  left: 931px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .card-4 {
+  top: 140px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 89px;
+  object-fit: cover;
+}
+
+.main .card-5 {
+  top: 140px;
+  position: absolute;
+  width: 174px;
+  height: 278px;
+  left: 959px;
+  object-fit: cover;
+}
+
+.main .card-6 {
+  top: 140px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 669px;
+  object-fit: cover;
+}
+
+.main .card-7 {
+  top: 140px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 379px;
+  object-fit: cover;
+}
+
+.main .text-wrapper-9 {
+  width: 105px;
+  height: 43px;
+  top: 421px;
+  left: 124px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-10 {
+  width: 105px;
+  height: 43px;
+  top: 421px;
+  left: 414px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-11 {
+  width: 105px;
+  height: 43px;
+  top: 421px;
+  left: 704px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-12 {
+  width: 105px;
+  height: 43px;
+  top: 421px;
+  left: 994px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .overlap-4 {
+  position: absolute;
+  width: 1220px;
+  height: 489px;
+  top: 1584px;
+  left: 109px;
+}
+
+.main .rectangle-14 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 107px;
+  left: 61px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-15 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 107px;
+  left: 351px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-16 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 107px;
+  left: 643px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .rectangle-17 {
+  position: absolute;
+  width: 229px;
+  height: 358px;
+  top: 107px;
+  left: 931px;
+  background-color: #d9d9d970;
+  border-radius: 50px;
+}
+
+.main .card-8 {
+  top: 140px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 89px;
+  object-fit: cover;
+}
+
+.main .card-9 {
+  top: 140px;
+  position: absolute;
+  width: 174px;
+  height: 278px;
+  left: 959px;
+  object-fit: cover;
+}
+
+.main .card-10 {
+  top: 140px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 669px;
+  object-fit: cover;
+}
+
+.main .card-11 {
+  top: 140px;
+  position: absolute;
+  width: 174px;
+  height: 275px;
+  left: 379px;
+  object-fit: cover;
+}
+
+.main .text-wrapper-13 {
+  width: 105px;
+  height: 43px;
+  top: 421px;
+  left: 124px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-14 {
+  width: 105px;
+  height: 43px;
+  top: 421px;
+  left: 414px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-15 {
+  width: 105px;
+  height: 43px;
+  top: 421px;
+  left: 704px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-16 {
+  width: 105px;
+  height: 43px;
+  top: 421px;
+  left: 994px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .overlap-5 {
+  position: absolute;
+  width: 1440px;
+  height: 731px;
+  top: 97px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px #0000001a;
+  overflow: hidden;
+}
+
+.main .polygon {
+  left: 1297px;
+  position: absolute;
+  width: 44px;
+  height: 51px;
+  top: 269px;
+  cursor: pointer;
+}
+
+.main .polygon-2 {
+  left: 112px;
+  position: absolute;
+  width: 44px;
+  height: 51px;
+  top: 269px;
+  cursor: pointer;
+}
+
+.main .component {
+  position: absolute;
+  width: 1030px;
+  height: 664px;
+  top: 31px;
+  left: 207px;
+  overflow: hidden;
+}
+
+.main .frame {
+  position: relative;
+  width: 1030px; /* 슬라이더 너비 */
+  height: 598px; /* 슬라이더 높이 */
+  overflow: hidden; /* 슬라이더 영역 밖 숨김 */
+}
+
+/* 슬라이드 내부 */
+.main .frame-2 {
+  display: flex; /* 슬라이드를 가로로 정렬 */
+  transition: transform 0.5s ease-in-out; /* 부드러운 이동 애니메이션 */
+  width: calc(1030px * 4); /* 슬라이드 개수만큼 너비 설정 */
+}
+
+.main .group {
+  flex: none; /* 고정된 크기 */
+  width: 1030px; /* 슬라이드 하나의 너비 */
+  height: 590px; /* 슬라이드 하나의 높이 */
+}
+
+.main .twentycard {
+  width: 1018px; /* 고유한 너비 */
+  height: 589px; /* 고유한 높이 */
+  position: absolute;
+  object-fit: cover;
+}
+
+.main .img-2 {
+  width: 1030px; /* 고유한 너비 */
+  height: 590px; /* 고유한 높이 */
+  position: absolute;
+  object-fit: contain; /* 비율 유지하며 남은 공간 채우기 */
+}
+
+.main .rectangle-18,
+.main .rectangle-19,
+.main .rectangle-20,
+.main .rectangle-21 {
+  position: absolute;
+  width: 21px; /* 기본 너비 */
+  height: 21px;
+  top: 643px;
+  background-color: #ababab; /* 기본 색상 */
+  border-radius: 50px; /* 둥근 모양 */
+  transition: all 0.3s ease; /* 부드러운 위치 및 크기 변경 */
+}
+
+.main .element-wrapper {
+  position: absolute;
+  width: 1440px;
+  height: 166px;
+  top: 2958px;
+  left: 0;
+  background-color: #f0f0f0;
+}
+
+.main .element {
+  width: 1230px;
+  height: 117px;
+  top: 21px;
+  left: 100px;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1460px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  position: fixed;
+  top: -10px;
+  left: -10px;
+}
+
+.main .navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+}
+
+.main .rectangle-22 {
+  position: relative;
+  width: 242px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+
+.main .rectangle-23 {
+  position: relative;
+  width: 240px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+
+.main .rectangle-24 {
+  position: relative;
+  width: 265px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+
+.main .rectangle-25 {
+  position: relative;
+  width: 231px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+
+.main .rectangle-26 {
+  position: relative;
+  width: 222px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+
+.main .text-wrapper-17 {
+  left: 540px;
+  position: absolute;
+  width: 146px;
+  height: 48px;
+  top: 33px;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-18 {
+  left: 780px;
+  position: absolute;
+  width: 170px;
+  height: 48px;
+  top: 33px;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-19 {
+  left: 1020px;
+  position: absolute;
+  width: 146px;
+  height: 48px;
+  top: 33px;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main .text-wrapper-20 {
+  position: absolute;
+  width: 146px;
+  height: 48px;
+  top: 27px;
+  left: 65px;
+  font-weight: 1000;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  text-shadow: 0px 4px 4px #00000040;
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.main .text-wrapper-21 {
+  left: 300px;
+  position: absolute;
+  width: 146px;
+  height: 48px;
+  top: 33px;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+.main .cardfit {
+  position: fixed;
+  width: 50px;
+  height: 45px;
+  top: 29px;
+  left: 13px;
+  object-fit: cover;
+}
+
+/* twenty.ejs 스타일 */
+.twenty {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.twenty .twenty-page {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 3183px;
+  position: relative;
+}
+
+.twenty .twenty-overlap {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 97px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.twenty .twenty-rectangle {
+  position: absolute;
+  width: 1181px;
+  height: 2396px;
+  top: 225px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+}
+
+/* twenty.ejs 스타일 계속 */
+.twenty .twenty-group {
+  top: 506px !important;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.twenty .twenty-overlap-group {
+  position: relative;
+  width: 1033px;
+  height: 505px;
+  top: -3px;
+  left: -3px;
+  background-color: #ffffff;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: #bebebe;
+}
+
+.twenty .twenty-image {
+  top: 98px;
+  left: 57px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.twenty .twenty-text-wrapper {
+  top: 339px;
+  left: 43px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 278px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.twenty .twenty-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.twenty .twenty-p {
+  width: 136px;
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-span {
+  color: #000000;
+  display: inline; /* 기본값을 명시 */
+}
+
+.twenty .twenty-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  position: relative;
+  left: -25px;
+  text-align: center;
+}
+
+.twenty .twenty-div-2 {
+  width: 215px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.twenty .twenty-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 108px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 300px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-element-CGV {
+  position: absolute;
+  width: 600px;
+  top: 60px !important;
+  left: 50px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.twenty .twenty-benefit-item {
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  white-space: nowrap;
+}
+
+.twenty .twenty-rectangle-3 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
+  left: 132px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  cursor: pointer;
+}
+.twenty .twenty-rectangle-3_1 {
+  position: absolute;
+  width: 322px;
+  height: 91px;
+  top: 139px;
+  left: 132px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  pointer-events: none;
+}
+.twenty .twenty-rectangle-3.active {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.twenty .twenty-rectangle-3_1.hidden {
+  opacity: 1;
+  pointer-events: auto;
+}
+.twenty .twenty-rectangle-4 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
+  left: 454px;
+  background-color: #F9C20B;
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  pointer-events: none;
+}
+
+.twenty .twenty-rectangle-5 {
+  position: absolute;
+  width: 322px;
+  height: 91px;
+  top: 139px;
+  left: 454px;
+  background-color: #fcdf7e;
+  border-radius: 20px 20px 0px 0px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  cursor: pointer;
+}
+
+.twenty .twenty-rectangle-4.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.twenty .twenty-rectangle-5.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.twenty .twenty-text-wrapper-6 {
+  width: 276px;
+  height: 70px;
+  top: 168px;
+  left: 160px;
+  color: #000000;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease-in;
+}
+
+.twenty .twenty-text-wrapper-7 {
+  width: 276px;
+  height: 70px;
+  top: 168px;
+  left: 476px;
+  color: #848484;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.twenty .twenty-text-wrapper-6.inactive {
+  color: #848484;  /* 비활성 회색 */
+}
+
+.twenty .twenty-text-wrapper-7.active {
+  color: #000000;  /* 활성 검정색 */
+}
+.twenty .twenty-rectangle-6 {
+  position: absolute;
+  width: 863px;
+  height: 62px;
+  top: 338px;
+  left: 251px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.twenty .twenty-rectangle-7 {
+  position: absolute;
+  width: 89px;
+  height: 62px;
+  top: 338px;
+  left: 1128px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.twenty .twenty-text-wrapper-8 {
+  width: 775px;
+  height: 39px;
+  top: 350px;
+  left: 275px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-text-wrapper-9 {
+  width: 108px;
+  height: 39px;
+  top: 349px;
+  left: 1114px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-overlap-wrapper {
+  top: 507px;
+  left: 206px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.twenty .twenty-img {
+  top: 97px;
+  left: 63px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.twenty .twenty-text-wrapper-10 {
+  top: 338px;
+  left: 49px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-overlap-group-2 {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 38px;
+  left: 284px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.twenty .twenty-text-wrapper-11 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 306px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-overlap-3 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 251px;
+  left: 150px;
+}
+
+.twenty .twenty-overlap-group-wrapper {
+  top: 2006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.twenty .twenty-div-wrapper {
+  top: 1006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.twenty .twenty-frame {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 885px;
+  left: 894px;
+}
+
+.twenty-page {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.twenty-page .twenty-content {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 3183px;
+  position: relative;
+}
+
+.twenty-page .twenty-overlap {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 97px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.twenty-page .twenty-rectangle {
+  position: absolute;
+  width: 1181px;
+  height: 2396px;
+  top: 225px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+}
+
+.twenty-page .twenty-group {
+  top: 1506px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+/* twenty.ejs 전용 스타일 계속 */
+.twenty-page .twenty-overlap-group {
+  position: relative;
+  width: 1033px;
+  height: 505px;
+  top: -3px;
+  left: -3px;
+  background-color: #ffffff;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: #bebebe;
+}
+
+.twenty-page .twenty-image {
+  top: 98px;
+  left: 57px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.twenty-page .twenty-text-wrapper {
+  top: 339px;
+  left: 43px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 278px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.twenty-page .twenty-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.twenty-page .twenty-p {
+  width: 96px;
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-span {
+  color: #000000;
+}
+
+.twenty-page .twenty-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+}
+
+.twenty-page .twenty-div-2 {
+  width: 255px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-text-wrapper-3 {
+  color: #000000;
+  font-size: 16px;
+}
+
+.twenty-page .twenty-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.twenty-page .twenty-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 109px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 21px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 300px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-element-CGV {
+  position: absolute;
+  width: 644px;
+  top: 88px;
+  left: 35px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-rectangle-3 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
+  left: 132px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* twenty.ejs 검색 스타일 */
+.twenty .twenty-search-wrapper {
+  position: absolute;
+  top: 338px;
+  left: 251px;
+  display: flex;
+  align-items: center;
+}
+
+.twenty .twenty-search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.twenty .twenty-search-input {
+  width: 863px;
+  height: 62px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 32px;
+  color: #b2afaf;
+}
+
+.twenty .twenty-search-button {
+  width: 89px;
+  height: 62px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 32px;
+  color: #b2afaf;
+  cursor: pointer;
+}
+
+.twenty .twenty-search-button:hover {
+  background-color: #e5e5e5;
+}
+
+.twenty .rectangle-2 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 221px;
+  background-color: #f9c20b;
+  border-radius: 10px;
+}
+
+.twenty .text-wrapper {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 203px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #0d0c0c;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .rectangle-3 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 431px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+}
+
+.twenty .text-wrapper-2 {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 413px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #848484;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .rectangle-4 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 641px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+}
+
+.twenty .text-wrapper-3 {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 623px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #848484;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .rectangle-5 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 851px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+}
+
+.twenty .text-wrapper-4 {
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 833px;
+  color: #848484;
+  font-size: 28px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .rectangle-6 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 1061px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+}
+
+.twenty .text-wrapper-5 {
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 1043px;
+  color: #848484;
+  font-size: 28px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.twenty .rectangle-2.active,
+.twenty .rectangle-3.active,
+.twenty .rectangle-4.active,
+.twenty .rectangle-5.active,
+.twenty .rectangle-6.active {
+  background-color: #f9c20b;  /* 활성화 시 진한 노란색 */
+}
+
+/* 활성화된 text-wrapper의 스타일 */
+.twenty .text-wrapper.active,
+.twenty .text-wrapper-2.active,
+.twenty .text-wrapper-3.active,
+.twenty .text-wrapper-4.active,
+.twenty .text-wrapper-5.active {
+  color: #0d0c0c;  /* 활성화 시 검정색 */
+}
+
+/* 기본 네비게이션 스타일 - box-shadow 없음 */
+.main .rectangle-22,
+.main .rectangle-23,
+.main .rectangle-24,
+.main .rectangle-25,
+.main .rectangle-26 {
+  position: relative;
+  width: 242px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+.main .rectangle-27{
+  position: relative;
+  width: 242px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+
+/* URL에 따른 box-shadow 적용 */
+/* 홈 */
+body[data-page="/"] .rectangle-22 {
+  box-shadow: 0px 4px 0px #000000;
+}
+
+/* 20대 추천 카드 */
+body[data-page="/twenty"] .rectangle-23 {
+  box-shadow: 13px 4px 0px #000000;
+}
+
+/* 정부 지원 카드 */
+body[data-page="/gov"] .rectangle-24 {
+  box-shadow: 15px 4px 0px #000000;
+}
+
+/* 퍼스널 맞춤 카드 */
+body[data-page="/personal"] .rectangle-25 {
+  box-shadow: 24px 4px 0px #000000;
+}
+
+/* 이달의 이벤트 */
+body[data-page="/event"] .rectangle-26 {
+  box-shadow: 15px 4px 0px #000000;
+}
+
+.twenty .twenty-div-2 .twenty-text-wrapper-2 {
+  position: relative;
+  left: 0;  /* -27px에서 0으로 변경 */
+  transform: translateX(-50%);  /* 가운데 정렬을 위해 추가 */
+  margin-left: 44%;  /* 가운데 정렬을 위해 추가 */
+}
