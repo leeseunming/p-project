@@ -23,22 +23,7 @@
                 202035204 이승민
             </p>
         </div>
-        <script>
-            !function (w, d, s, ...args) {
-                var div = d.createElement('div');
-                div.id = 'aichatbot';
-                d.body.appendChild(div);
-                w.chatbotConfig = args;
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s);
-                j.defer = true;
-                j.type = 'module';
-                j.src = 'https://aichatbot.sendbird.com/index.js';
-                f.parentNode.insertBefore(j, f);
-            }(window, document, 'script', '0E5022AC-84D7-4E1D-8EEB-B02CD3184B70', 'J7GWLByl_ttj0lCP-YIXC', {
-                apiHost: 'https://api-cf-ap-2.sendbird.com',
-            });
-        </script>
+        <script src="js/chatbot.js"></script>
         <div class="navbar-wrapper">
             <div class="navbar">
                 <div class="rectangle-22"></div>
@@ -47,11 +32,11 @@
                 <div class="rectangle-25"></div>
                 <div class="rectangle-26"></div>
                 <div class="rectangle-23"></div>
-                <div class="text-wrapper-17">정부 지원 카드</div>
-                <div class="text-wrapper-18">퍼스널 맞춤 카드</div>
-                <div class="text-wrapper-19">이달의 이벤트</div>
                 <a href="/" class="text-wrapper-20">Card Fit</a>
+                <a href="/personal" class="text-wrapper-18">퍼스널 맞춤 카드</a>
                 <a href="/twenty" class="text-wrapper-21">20대 추천 카드</a>
+                <a href="/event" class="text-wrapper-19">이달의 이벤트</a>
+                <a href="/gov" class="text-wrapper-17">정부 지원 카드</a>
             </div>
             <a href="/">
                 <img class="cardfit" src="img/cardfit.png" alt="메인 페이지로 이동" />

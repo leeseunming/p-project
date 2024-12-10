@@ -12,6 +12,18 @@ router.get('/twenty', (req, res) => {
     root.twenty(req, res); // twenty 페이지 처리
 });
 
+router.get('/personal', (req, res) => {
+    root.personal(req, res); // personal 페이지 처리
+});
+
+router.get('/event', (req, res) => {
+    root.event(req, res); // personal 페이지 처리
+});
+
+router.get('/gov', (req, res) => {
+    root.gov(req, res); // personal 페이지 처리
+});
+
 // 검색 처리
 router.post('/search', (req, res) => {
     root.search(req, res);
