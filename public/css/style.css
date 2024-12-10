@@ -30,7 +30,7 @@ body {
   position: absolute;
   width: 1440px;
   height: 2845px;
-  top: 97px;
+  top: 0px;
   left: 0;
   background-color: #f7f7f7;
 }
@@ -94,7 +94,22 @@ body {
   top: -55px;
   width: 127px;
   height: 47px;
-  left: 1030px;
+  left: 1006px;
+  color: #070606;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.main .text-wrapper-2-twenty {
+  position: relative;
+  top: -55px;
+  width: 127px;
+  height: 47px;
+  left: 1031px;  /* 다른 위치 값 사용 */
   color: #070606;
   font-size: 20px;
   text-align: center;
