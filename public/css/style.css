@@ -1063,16 +1063,42 @@ body {
   left: 132px;
   background-color: #ffffff;
   border-radius: 20px 20px 0px 0px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  cursor: pointer;
 }
-
-.twenty .twenty-rectangle-4 {
+.twenty .twenty-rectangle-3_1 {
   position: absolute;
   width: 322px;
   height: 91px;
   top: 139px;
+  left: 132px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  pointer-events: none;
+}
+.twenty .twenty-rectangle-3.active {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.twenty .twenty-rectangle-3_1.hidden {
+  opacity: 1;
+  pointer-events: auto;
+}
+.twenty .twenty-rectangle-4 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
   left: 454px;
-  background-color: #dde8f8;
-  border-radius: 0px 20px 0px 0px;
+  background-color: #F9C20B;
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  pointer-events: none;
 }
 
 .twenty .twenty-rectangle-5 {
@@ -1083,12 +1109,25 @@ body {
   left: 454px;
   background-color: #fcdf7e;
   border-radius: 20px 20px 0px 0px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  cursor: pointer;
+}
+
+.twenty .twenty-rectangle-4.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.twenty .twenty-rectangle-5.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .twenty .twenty-text-wrapper-6 {
   width: 276px;
   height: 70px;
-  top: 148px;
+  top: 168px;
   left: 160px;
   color: #000000;
   font-size: 32px;
@@ -1098,12 +1137,13 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  transition: color 0.3s ease-in;
 }
 
 .twenty .twenty-text-wrapper-7 {
   width: 276px;
   height: 70px;
-  top: 148px;
+  top: 168px;
   left: 476px;
   color: #848484;
   font-size: 32px;
@@ -1114,7 +1154,13 @@ body {
   letter-spacing: 0;
   line-height: normal;
 }
+.twenty .twenty-text-wrapper-6.inactive {
+  color: #848484;  /* 비활성 회색 */
+}
 
+.twenty .twenty-text-wrapper-7.active {
+  color: #000000;  /* 활성 검정색 */
+}
 .twenty .twenty-rectangle-6 {
   position: absolute;
   width: 863px;
@@ -1624,4 +1670,20 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+}
+.twenty .rectangle-2.active,
+.twenty .rectangle-3.active,
+.twenty .rectangle-4.active,
+.twenty .rectangle-5.active,
+.twenty .rectangle-6.active {
+  background-color: #f9c20b;  /* 활성화 시 진한 노란색 */
+}
+
+/* 활성화된 text-wrapper의 스타일 */
+.twenty .text-wrapper.active,
+.twenty .text-wrapper-2.active,
+.twenty .text-wrapper-3.active,
+.twenty .text-wrapper-4.active,
+.twenty .text-wrapper-5.active {
+  color: #0d0c0c;  /* 활성화 시 검정색 */
 }
