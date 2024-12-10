@@ -26,6 +26,15 @@ body {
   position: relative;
 }
 
+.main .div .home-content2 {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 97px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
 .main .overlap {
   position: absolute;
   width: 1440px;
@@ -85,13 +94,14 @@ body {
   top: -55px;
   width: 127px;
   height: 47px;
-  left: 1006px;
+  left: 1030px;
   color: #070606;
   font-size: 20px;
   text-align: center;
   font-weight: 800;
   letter-spacing: 0;
   line-height: normal;
+  text-decoration: none;
 }
 
 .main .rectangle-3 {
@@ -808,6 +818,7 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  text-decoration: none; /* 링크 밑줄 제거 */
 }
 
 .main .cardfit {
@@ -817,4 +828,660 @@ body {
   top: 29px;
   left: 13px;
   object-fit: cover;
+}
+
+/* twenty.ejs 스타일 */
+.twenty {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.twenty .twenty-page {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 3183px;
+  position: relative;
+}
+
+.twenty .twenty-overlap {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 97px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.twenty .twenty-rectangle {
+  position: absolute;
+  width: 1181px;
+  height: 2396px;
+  top: 225px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+}
+
+/* twenty.ejs 스타일 계속 */
+.twenty .twenty-group {
+  top: 1506px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.twenty .twenty-overlap-group {
+  position: relative;
+  width: 1033px;
+  height: 505px;
+  top: -3px;
+  left: -3px;
+  background-color: #ffffff;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: #bebebe;
+}
+
+.twenty .twenty-image {
+  top: 98px;
+  left: 57px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.twenty .twenty-text-wrapper {
+  top: 339px;
+  left: 43px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 278px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.twenty .twenty-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.twenty .twenty-p {
+  width: 136px;
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-span {
+  color: #000000;
+  display: inline; /* 기본값을 명시 */
+}
+
+.twenty .twenty-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+  display: inline-block; /* 일관된 블록 처리 */
+}
+
+.twenty .twenty-div-2 {
+  width: 215px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.twenty .twenty-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 108px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 316px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-element-CGV {
+  position: absolute;
+  width: 600px;
+  top: 88px;
+  left: 50px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.twenty .twenty-benefit-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.twenty .twenty-benefit-item {
+  width: 180px;
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.twenty .twenty-rectangle-3 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
+  left: 132px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.twenty .twenty-rectangle-4 {
+  position: absolute;
+  width: 322px;
+  height: 91px;
+  top: 139px;
+  left: 454px;
+  background-color: #dde8f8;
+  border-radius: 0px 20px 0px 0px;
+}
+
+.twenty .twenty-rectangle-5 {
+  position: absolute;
+  width: 322px;
+  height: 91px;
+  top: 139px;
+  left: 454px;
+  background-color: #fcdf7e;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.twenty .twenty-text-wrapper-6 {
+  width: 276px;
+  height: 70px;
+  top: 148px;
+  left: 160px;
+  color: #000000;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-text-wrapper-7 {
+  width: 276px;
+  height: 70px;
+  top: 148px;
+  left: 476px;
+  color: #848484;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-rectangle-6 {
+  position: absolute;
+  width: 863px;
+  height: 62px;
+  top: 338px;
+  left: 251px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.twenty .twenty-rectangle-7 {
+  position: absolute;
+  width: 89px;
+  height: 62px;
+  top: 338px;
+  left: 1128px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.twenty .twenty-text-wrapper-8 {
+  width: 775px;
+  height: 39px;
+  top: 350px;
+  left: 275px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-text-wrapper-9 {
+  width: 108px;
+  height: 39px;
+  top: 349px;
+  left: 1114px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-overlap-wrapper {
+  top: 507px;
+  left: 206px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.twenty .twenty-img {
+  top: 97px;
+  left: 63px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.twenty .twenty-text-wrapper-10 {
+  top: 338px;
+  left: 49px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-overlap-group-2 {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 38px;
+  left: 284px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.twenty .twenty-text-wrapper-11 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 306px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty .twenty-overlap-3 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 251px;
+  left: 150px;
+}
+
+.twenty .twenty-overlap-group-wrapper {
+  top: 2006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.twenty .twenty-div-wrapper {
+  top: 1006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.twenty .twenty-frame {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 885px;
+  left: 894px;
+}
+
+.twenty-page {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.twenty-page .twenty-content {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 3183px;
+  position: relative;
+}
+
+.twenty-page .twenty-overlap {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 97px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.twenty-page .twenty-rectangle {
+  position: absolute;
+  width: 1181px;
+  height: 2396px;
+  top: 225px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+}
+
+.twenty-page .twenty-group {
+  top: 1506px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+/* twenty.ejs 전용 스타일 계속 */
+.twenty-page .twenty-overlap-group {
+  position: relative;
+  width: 1033px;
+  height: 505px;
+  top: -3px;
+  left: -3px;
+  background-color: #ffffff;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: #bebebe;
+}
+
+.twenty-page .twenty-image {
+  top: 98px;
+  left: 57px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.twenty-page .twenty-text-wrapper {
+  top: 339px;
+  left: 43px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 278px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.twenty-page .twenty-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.twenty-page .twenty-p {
+  width: 136px;
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-span {
+  color: #000000;
+}
+
+.twenty-page .twenty-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+}
+
+.twenty-page .twenty-div-2 {
+  width: 215px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-text-wrapper-3 {
+  color: #000000;
+  font-size: 16px;
+}
+
+.twenty-page .twenty-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.twenty-page .twenty-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 109px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 21px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 316px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-element-CGV {
+  position: absolute;
+  width: 644px;
+  top: 88px;
+  left: 35px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twenty-page .twenty-rectangle-3 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
+  left: 132px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* twenty.ejs 검색 스타일 */
+.twenty .twenty-search-wrapper {
+  position: absolute;
+  top: 338px;
+  left: 251px;
+  display: flex;
+  align-items: center;
+}
+
+.twenty .twenty-search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.twenty .twenty-search-input {
+  width: 863px;
+  height: 62px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 32px;
+  color: #b2afaf;
+}
+
+.twenty .twenty-search-button {
+  width: 89px;
+  height: 62px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 32px;
+  color: #b2afaf;
+  cursor: pointer;
+}
+
+.twenty .twenty-search-button:hover {
+  background-color: #e5e5e5;
 }

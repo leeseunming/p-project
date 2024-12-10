@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,103 +11,10 @@
 <body>
     <div class="main">
         <div class="div">
-            <div class="overlap">
-                <div class="overlap-group">
-                    <div class="rectangle"></div>
-                    <div class="text-wrapper">20대 추천 혜택</div>
-                    <div class="rectangle-2"></div>
-                    <div class="text-wrapper-2">전체보기</div>
-                    <div class="rectangle-3"></div>
-                    <div class="rectangle-4"></div>
-                    <div class="rectangle-5"></div>
-                    <div class="rectangle-6"></div>
-                    <img class="card" src="img/card1.png" />
-                    <img class="img" src="img/card2.png" />
-                    <img class="card-2" src="img/card3.png" />
-                    <img class="card-3" src="img/card4.png" />
-                    <div class="text-wrapper-3">카드1</div>
-                    <div class="text-wrapper-4">카드1</div>
-                    <div class="text-wrapper-5">카드1</div>
-                    <div class="text-wrapper-6">카드1</div>
-                </div>
-                <div class="overlap-2">
-                    <div class="rectangle-7"></div>
-                    <div class="text-wrapper">정부 지원 혜택</div>
-                    <div class="rectangle-8"></div>
-                    <div class="text-wrapper-2">전체보기</div>
-                    <div class="rectangle-3"></div>
-                    <div class="rectangle-4"></div>
-                    <div class="rectangle-5"></div>
-                    <div class="rectangle-6"></div>
-                    <img class="card" src="img/card1.png" />
-                    <img class="img" src="img/card2.png" />
-                    <img class="card-2" src="img/card3.png" />
-                    <img class="card-3" src="img/card4.png" />
-                    <div class="text-wrapper-3">카드1</div>
-                    <div class="text-wrapper-4">카드1</div>
-                    <div class="text-wrapper-5">카드1</div>
-                    <div class="text-wrapper-6">카드1</div>
-                </div>
-                <div class="overlap-3">
-                    <div class="rectangle"></div>
-                    <div class="text-wrapper">퍼스널 맞춤 혜택</div>
-                    <div class="rectangle-9"></div>
-                    <div class="text-wrapper-2">전체보기</div>
-                    <div class="rectangle-10"></div>
-                    <div class="rectangle-11"></div>
-                    <div class="rectangle-12"></div>
-                    <div class="rectangle-13"></div>
-                    <img class="card-4" src="img/card1.png" />
-                    <img class="card-5" src="img/card2.png" />
-                    <img class="card-6" src="img/card3.png" />
-                    <img class="card-7" src="img/card4.png" />
-                    <div class="text-wrapper-9">카드1</div>
-                    <div class="text-wrapper-10">카드1</div>
-                    <div class="text-wrapper-11">카드1</div>
-                    <div class="text-wrapper-12">카드1</div>
-                </div>
-                <div class="overlap-4">
-                    <div class="rectangle"></div>
-                    <div class="text-wrapper">이달의 이벤트</div>
-                    <div class="rectangle-9"></div>
-                    <div class="text-wrapper-2">전체보기</div>
-                    <div class="rectangle-14"></div>
-                    <div class="rectangle-15"></div>
-                    <div class="rectangle-16"></div>
-                    <div class="rectangle-17"></div>
-                    <img class="card-8" src="img/card1.png" />
-                    <img class="card-9" src="img/card2.png" />
-                    <img class="card-10" src="img/card3.png" />
-                    <img class="card-11" src="img/card4.png" />
-                    <div class="text-wrapper-13">카드1</div>
-                    <div class="text-wrapper-14">카드1</div>
-                    <div class="text-wrapper-15">카드1</div>
-                    <div class="text-wrapper-16">카드1</div>
-                </div>
+            <div class="home-content2">
+                <%- include(body) %>
             </div>
-            <div class="overlap-5">
-                <img class="polygon" src="img/폴리곤1.png" onclick="nextSlide()" />
-                <img class="polygon-2" src="img/폴리곤2.png" onclick="prevSlide()" />
-                <div class="component">
-                    <div class="frame">
-                        <div class="frame-2" id="slider">
-                            <div class="group"><img class="twentycard" src="img/twentycard.png" /></div>
-                            <div class="group"><img class="img-2" src="img/govcard.png" /></div>
-                            <div class="group"><img class="img-2" src="img/personcard.png" /></div>
-                            <div class="group"><img class="img-2" src="img/eventcard.png" /></div>
-                        </div>
-                    </div>
-                    <div class="rectangle-18"></div>
-                    <div class="rectangle-19"></div>
-                    <div class="rectangle-20"></div>
-                    <div class="rectangle-21"></div>
-                </div>
-
-            </div>
-
         </div>
-
-
         <div class="element-wrapper">
             <p class="element">
                 202035204 이승민<br />
@@ -117,19 +24,19 @@
             </p>
         </div>
         <script>
-            !function(w, d, s, ...args){
-              var div = d.createElement('div');
-              div.id = 'aichatbot';
-              d.body.appendChild(div);
-              w.chatbotConfig = args;
-              var f = d.getElementsByTagName(s)[0],
-              j = d.createElement(s);
-              j.defer = true;
-              j.type = 'module';
-              j.src = 'https://aichatbot.sendbird.com/index.js';
-              f.parentNode.insertBefore(j, f);
+            !function (w, d, s, ...args) {
+                var div = d.createElement('div');
+                div.id = 'aichatbot';
+                d.body.appendChild(div);
+                w.chatbotConfig = args;
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s);
+                j.defer = true;
+                j.type = 'module';
+                j.src = 'https://aichatbot.sendbird.com/index.js';
+                f.parentNode.insertBefore(j, f);
             }(window, document, 'script', '0E5022AC-84D7-4E1D-8EEB-B02CD3184B70', 'J7GWLByl_ttj0lCP-YIXC', {
-              apiHost: 'https://api-cf-ap-2.sendbird.com',
+                apiHost: 'https://api-cf-ap-2.sendbird.com',
             });
         </script>
         <div class="navbar-wrapper">
@@ -144,7 +51,7 @@
                 <div class="text-wrapper-18">퍼스널 맞춤 카드</div>
                 <div class="text-wrapper-19">이달의 이벤트</div>
                 <a href="/" class="text-wrapper-20">Card Fit</a>
-                <div class="text-wrapper-21">20대 추천 카드</div>
+                <a href="/twenty" class="text-wrapper-21">20대 추천 카드</a>
             </div>
             <a href="/">
                 <img class="cardfit" src="img/cardfit.png" alt="메인 페이지로 이동" />
