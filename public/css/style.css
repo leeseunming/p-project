@@ -22,23 +22,29 @@ body {
   background-color: #f4f4f4fc;
   overflow: hidden;
   width: 1440px;
-  height: 3124px;
+  min-height: 3124px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
   position: relative;
+  display: flex;
+  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
 }
 
 .main .div .home-content2 {
   position: absolute;
   width: 1440px;
-  height: 2845px;
+  min-height: 2845px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
+  display: flex;
   top: 0px;
   left: 0;
   background-color: #f7f7f7;
+  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
 }
-
 .main .overlap {
   position: absolute;
   width: 1440px;
   height: 2101px;
+  display: flex;
   top: 838px;
   left: 1px;
   background-color: #fdfdfd;
@@ -687,7 +693,8 @@ body {
   width: 1440px;
   height: 166px;
   top: 2958px;
-  left: 0;
+  left: 50%;  /* 변경: 화면의 50% 지점으로 이동 */
+  transform: translateX(-50%);  /* 변경: 자신의 너비의 50%만큼 왼쪽으로 이동하여 중앙 정렬 */
   background-color: #f0f0f0;
 }
 
@@ -714,8 +721,10 @@ body {
   padding: 10px;
   position: fixed;
   top: -10px;
-  left: -10px;
+  left: 50%;  /* 변경: 화면의 50% 지점으로 이동 */
+  transform: translateX(-50%);  /* 변경: 자신의 너비의 50%만큼 왼쪽으로 이동하여 중앙 정렬 */
 }
+
 
 .main .navbar {
   display: flex;
@@ -836,7 +845,7 @@ body {
 }
 
 .main .cardfit {
-  position: fixed;
+  position: absolute;
   width: 50px;
   height: 45px;
   top: 29px;
@@ -857,8 +866,10 @@ body {
   background-color: #f4f4f4fc;
   overflow: hidden;
   width: 1440px;
-  height: 3183px;
+  min-height: 3183px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
   position: relative;
+  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
 }
 
 .twenty .twenty-overlap {
@@ -1071,12 +1082,13 @@ body {
   width: 322px;
   height: 91px;
   top: 139px;
-  left: 132px;
+  left: 135px;
   background-color: #ffffff;
   border-radius: 20px 20px 0px 0px;
   opacity: 0;
   transition: opacity 0.3s ease-in;
   pointer-events: none;
+  cursor: pointer;
 }
 .twenty .twenty-rectangle-3.active {
   opacity: 0;
@@ -1098,6 +1110,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in;
   pointer-events: none;
+  cursor: pointer;
 }
 
 .twenty .twenty-rectangle-5 {
@@ -1137,6 +1150,7 @@ body {
   letter-spacing: 0;
   line-height: normal;
   transition: color 0.3s ease-in;
+  cursor: pointer;
 }
 
 .twenty .twenty-text-wrapper-7 {
@@ -1152,6 +1166,7 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  cursor: pointer;
 }
 .twenty .twenty-text-wrapper-6.inactive {
   color: #848484;  /* 비활성 회색 */
@@ -1318,20 +1333,24 @@ body {
 .twenty-page .twenty-overlap {
   position: absolute;
   width: 1440px;
-  height: 2845px;
+  min-height: 2845px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
   top: 97px;
   left: 0;
   background-color: #f7f7f7;
+  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
 }
 
 .twenty-page .twenty-rectangle {
   position: absolute;
   width: 1181px;
-  height: 2396px;
+  min-height: 2396px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
   top: 225px;
   left: 135px;
   background-color: #ffffff;
   border-radius: 0px 50px 50px 50px;
+  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
 }
 
 .twenty-page .twenty-group {
@@ -1363,7 +1382,7 @@ body {
   position: absolute;
   width: 157px;
   height: 240px;
-  object-fit: cover;
+  object-fit: contain;  
 }
 
 .twenty-page .twenty-text-wrapper {
@@ -1499,7 +1518,7 @@ body {
   width: 322px;
   height: 102px;
   top: 128px;
-  left: 132px;
+  left: 135px;
   background-color: #ffffff;
   border-radius: 20px 20px 0px 0px;
 }
@@ -1526,19 +1545,19 @@ body {
   border: none;
   padding: 0 20px;
   font-family: 'GmarketSansMedium', sans-serif;
-  font-size: 32px;
+  font-size: 25px;
   color: #b2afaf;
 }
 
 .twenty .twenty-search-button {
   width: 89px;
   height: 62px;
-  background-color: #f1f1f1;
+  background-color: #f9c20b;
   border-radius: 10px;
   border: none;
   font-family: 'GmarketSansMedium', sans-serif;
-  font-size: 32px;
-  color: #b2afaf;
+  font-size: 25px;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -1554,6 +1573,7 @@ body {
   left: 221px;
   background-color: #f9c20b;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .twenty .text-wrapper {
@@ -1569,6 +1589,7 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  cursor: pointer;
 }
 
 .twenty .rectangle-3 {
@@ -1579,6 +1600,7 @@ body {
   left: 431px;
   background-color: #fcdf7f;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .twenty .text-wrapper-2 {
@@ -1594,6 +1616,7 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  cursor: pointer;
 }
 
 .twenty .rectangle-4 {
@@ -1604,6 +1627,7 @@ body {
   left: 641px;
   background-color: #fcdf7f;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .twenty .text-wrapper-3 {
@@ -1619,6 +1643,7 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  cursor: pointer;
 }
 
 .twenty .rectangle-5 {
@@ -1629,6 +1654,7 @@ body {
   left: 851px;
   background-color: #fcdf7f;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .twenty .text-wrapper-4 {
@@ -1644,6 +1670,7 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  cursor: pointer;
 }
 
 .twenty .rectangle-6 {
@@ -1654,6 +1681,7 @@ body {
   left: 1061px;
   background-color: #fcdf7f;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .twenty .text-wrapper-5 {
@@ -1669,6 +1697,7 @@ body {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  cursor: pointer;
 }
 .twenty .rectangle-2.active,
 .twenty .rectangle-3.active,
