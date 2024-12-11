@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const bodyParser = require('body-parser');
 
 // 라우터 불러오기
 const indexRouter = require('./router/rootRouter');
@@ -8,6 +9,8 @@ const indexRouter = require('./router/rootRouter');
 // 뷰 엔진 설정
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
 
 // 정적 파일 제공
 // public 디렉토리를 정적 경로로 설정

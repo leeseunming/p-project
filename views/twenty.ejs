@@ -44,16 +44,14 @@
       <div class="twenty-text-wrapper-6">신용카드</div>
       <div class="twenty-text-wrapper-7">체크카드</div>
       <div class="twenty-search-wrapper">
-        <form class="twenty-search-form" action="/search" method="post">
-          <input 
-            class="twenty-search-input" 
-            type="search" 
-            placeholder="찾고싶은 카드" 
-            name="search"
-            aria-label="Search"
-          />
-          <button class="twenty-search-button" type="submit">검색</button>
-        </form>
+        <form action="/search_twenty" method="POST" class="twenty-search-form">
+          <input type="text" 
+                 name="search" 
+                 class="twenty-search-input" 
+                 placeholder="검색어를 입력하세요"
+                 value="<%= locals.searchKeyword || '' %>">
+          <button type="submit" class="twenty-search-button">검색</button>
+      </form>
       </div>
     </div>
   </div>

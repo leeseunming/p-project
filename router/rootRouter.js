@@ -25,8 +25,8 @@ router.get('/gov', (req, res) => {
 });
 
 // 검색 처리
-router.post('/search', (req, res) => {
-    root.search(req, res);
+router.post('/search_twenty', (req, res) => {
+    root.search_twenty(req, res);
 });
 
 module.exports = router;
