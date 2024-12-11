@@ -1334,14 +1334,13 @@ body {
   line-height: normal;
 }
 
-.twenty-page .twenty-div {
+.twenty-page .twenty-image {
+  top: 98px;
+  left: 57px;
   position: absolute;
-  width: 713px;
-  height: 423px;
-  top: 39px;
-  left: 278px;
-  background-color: #f7f7f7;
-  border-radius: 30px;
+  width: 157px;
+  height: 240px;
+  object-fit: contain;
 }
 
 .twenty-page .twenty-overlap-2 {

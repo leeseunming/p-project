@@ -28,6 +28,14 @@ router.get('/twenty-check', (req, res) => {
     root.twentyCheck(req, res)
 });
 
+router.get('/gov-check', (req, res) => {
+    root.govCheck(req, res)
+});
+
+router.get('/personal-check', (req, res) => {
+    root.personalCheck(req, res)
+});
+
 
 // 검색 처리
 router.post('/search', (req, res) => {
