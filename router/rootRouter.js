@@ -24,6 +24,11 @@ router.get('/gov', (req, res) => {
     root.gov(req, res); // personal 페이지 처리
 });
 
+router.get('/twenty-check', (req, res) => {
+    root.twentyCheck(req, res)
+});
+
+
 // 검색 처리
 router.post('/search', (req, res) => {
     root.search(req, res);
