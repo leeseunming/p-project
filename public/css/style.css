@@ -1101,10 +1101,6 @@ body {
   word-break: keep-all;       /* 한글 단어 단위로 줄바꿈 */
 }
 
-.twenty .gov-text-wrapper-6,
-.twenty .gov-text-wrapper-7,
-.twenty .gov-text-wrapper-6-1,
-.twenty .gov-text-wrapper-7-1,
 .twenty .twenty-text-wrapper-6,
 .twenty .twenty-text-wrapper-7,
 .twenty .twenty-text-wrapper-6-1,
@@ -1124,8 +1120,7 @@ body {
 }
 
 /* 신용카드 활성화 스타일 */
-.twenty .twenty-text-wrapper-6,
-.twenty .gov-text-wrapper-6 {
+.twenty .twenty-text-wrapper-6 {
     background: #ffffff;
     border-radius: 20px 20px 0px 0px;
     height: 102px;
@@ -1134,8 +1129,7 @@ body {
     color: #000000;
 }
 
-.twenty .twenty-text-wrapper-7,
-.twenty .gov-text-wrapper-7 {
+.twenty .twenty-text-wrapper-7 {
     border-radius: 20px 20px 0px 0px;
     background-color: #fcdf7f;
     height: 91px;
@@ -1145,8 +1139,7 @@ body {
 }
 
 /* 체크카드 활성화 스타일 */
-.twenty .twenty-text-wrapper-6-1,
-.twenty .gov-text-wrapper-6-1 {
+.twenty .twenty-text-wrapper-6-1 {
     background: #ffffff;
     border-radius: 20px 20px 0px 0px;
     height: 91px;
@@ -1156,8 +1149,7 @@ body {
     display: none;
 }
 
-.twenty .twenty-text-wrapper-7-1,
-.twenty .gov-text-wrapper-7-1 {
+.twenty .twenty-text-wrapper-7-1 {
     border-radius: 20px 20px 0px 0px;
     background-color: #F9c20B;
     height: 102px;
@@ -1168,31 +1160,23 @@ body {
 }
 
 body[data-page="twenty"] .twenty-text-wrapper-6,
-body[data-page="twenty"] .twenty-text-wrapper-7,
-body[data-page="gov"] .gov-text-wrapper-6, 
-body[data-page="gov"] .gov-text-wrapper-7{
+body[data-page="twenty"] .twenty-text-wrapper-7{
     display: flex;
 }
 
 body[data-page="twenty"] .twenty-text-wrapper-6-1,
-body[data-page="twenty"] .twenty-text-wrapper-7-1,
-body[data-page="gov"] .gov-text-wrapper-6-1,
-body[data-page="gov"] .gov-text-wrapper-7-1 {
+body[data-page="twenty"] .twenty-text-wrapper-7-1{
     display: none;
 }
 
 /* 체크카드 페이지(/twenty_check)일 때의 스타일 */
 body[data-page="twenty_check"] .twenty-text-wrapper-6,
-body[data-page="twenty_check"] .twenty-text-wrapper-7,
-body[data-page="gov_check"] .gov-text-wrapper-6,
-body[data-page="gov_check"] .gov-text-wrapper-7 {
+body[data-page="twenty_check"] .twenty-text-wrapper-7{
     display: none;
 }
 
 body[data-page="twenty_check"] .twenty-text-wrapper-6-1,
-body[data-page="twenty_check"] .twenty-text-wrapper-7-1,
-body[data-page="gov_check"] .gov-text-wrapper-6-1
-body[data-page="gov_check"] .gov-text-wrapper-7-1 {
+body[data-page="twenty_check"] .twenty-text-wrapper-7-1{
     display: flex;
 }
 
@@ -1535,18 +1519,18 @@ body[data-page="gov_check"] .gov-text-wrapper-7-1 {
 
 .twenty-page .twenty-element-CGV {
   position: absolute;
-  width: 713px;
+  width: 700px;
   top: 88px;
-  left: -5px;
+  left: 0px;
   font-family: 'GmarketSansMedium', sans-serif;
   font-weight: 800;
   color: #626262;
   font-size: 16px;
   letter-spacing: 0;
-  line-height: normal;
+  line-height: 30px;  /* 24px에서 30px로 줄간격 증가 */
   display: flex;
   flex-direction: column;
-  max-height: calc(24px * 6); /* 줄 높이(24px) * 6줄 */
+  max-height: calc(30px * 6);  /* 줄 높이(30px) * 6줄 = 최대 6줄까지만 표시 */
   overflow: hidden;
 }
 
@@ -1811,4 +1795,908 @@ body[data-page="/event"] .rectangle-26 {
   left: 0;  /* -27px에서 0으로 변경 */
   transform: translateX(-50%);  /* 가운데 정렬을 위해 추가 */
   margin-left: 129px;  /* 가운데 정렬을 위해 추가 */
+}
+
+.gov {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gov .gov-page {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  min-height: 1000px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
+  position: relative;
+  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
+  overflow: visible;
+}
+
+.gov .gov-overlap {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 97px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.gov .gov-rectangle {
+  position: absolute;
+  width: 1181px;
+  height: 2396px;
+  top: 225px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+}
+
+/*.gov.ejs 스타일 계속 */
+.gov .gov-group {
+  top: 506px !important;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.gov .gov-overlap-group {
+  position: relative;
+  width: 1100px;
+  height: 505px;
+  top: -3px;
+  left: -3px;
+  background-color: #ffffff;
+  
+  /* 보더 관련 스타일 */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;  /* 중앙 정렬을 위해 50%로 설정 */
+    transform: translateX(-50%);  /* 중앙 정렬을 위한 변환 */
+    width: 1050px;  /* 보더 전체 길이 - 양쪽으로 400px씩 */
+    height: 2px;
+    bottom: 0px;
+    background-color: #bebebe;
+  }
+}
+.gov .gov-image {
+  top: 98px;
+  left: 57px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.gov .gov-text-wrapper {
+  top: 339px;
+  left: 43px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 278px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.gov .gov-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.gov .gov-p {
+  width: 136px;
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-span {
+  color: #000000;
+  display: inline; /* 기본값을 명시 */
+}
+
+.gov .gov-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  position: relative;
+  left: -25px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.gov .gov-div-2 {
+  width: 215px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.gov .gov-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 108px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 300px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-element-CGV {
+  position: absolute;
+  width: 600px;
+  top: 60px !important;
+  left: 50px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.gov .gov-benefit-item {
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  height: 24px;  /* 각 항목의 높이도 24px로 고정 */
+  white-space: nowrap;  /* 한 줄로 표시 */
+  overflow: hidden;     /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis;  /* 넘치는 텍스트를 ...으로 표시 */
+}
+
+.gov .gov-text-wrapper-6,
+.gov .gov-text-wrapper-7,
+.gov .gov-text-wrapper-6-1,
+.gov .gov-text-wrapper-7-1 {
+    position: absolute;
+    width: 322px;
+    font-size: 32px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-out;
+}
+
+/* 신용카드 활성화 스타일 */
+.gov .gov-text-wrapper-6 {
+    background: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    height: 102px;
+    top: 128px;
+    left: 134px;
+    color: #000000;
+}
+
+.gov .gov-text-wrapper-7 {
+    border-radius: 20px 20px 0px 0px;
+    background-color: #fcdf7f;
+    height: 91px;
+    top: 139px;
+    left: 454px;
+    color: #848484;
+}
+
+/* 체크카드 활성화 스타일 */
+
+.gov .gov-text-wrapper-6-1 {
+    background: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    height: 91px;
+    top: 139px;
+    left: 134px;
+    color: #848484;
+    display: none;
+}
+
+.gov .gov-text-wrapper-7-1 {
+    border-radius: 20px 20px 0px 0px;
+    background-color: #F9c20B;
+    height: 102px;
+    top: 128px;
+    left: 454px;
+    color: #000000;
+    display: none;
+}
+
+body[data-page="gov"] .gov-text-wrapper-6, 
+body[data-page="gov"] .gov-text-wrapper-7{
+    display: flex;
+}
+
+body[data-page="gov"] .gov-text-wrapper-6-1,
+body[data-page="gov"] .gov-text-wrapper-7-1 {
+    display: none;
+}
+
+body[data-page="gov_check"] .gov-text-wrapper-6,
+body[data-page="gov_check"] .gov-text-wrapper-7 {
+    display: none;
+}
+
+body[data-page="gov_check"] .gov-text-wrapper-6-1,
+body[data-page="gov_check"] .gov-text-wrapper-7-1 {
+    display: flex;
+}
+
+.gov .gov-rectangle-6 {
+  position: absolute;
+  width: 863px;
+  height: 62px;
+  top: 338px;
+  left: 251px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.gov .gov-rectangle-7 {
+  position: absolute;
+  width: 89px;
+  height: 62px;
+  top: 338px;
+  left: 1128px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.gov .gov-text-wrapper-8 {
+  width: 775px;
+  height: 39px;
+  top: 350px;
+  left: 275px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-text-wrapper-9 {
+  width: 108px;
+  height: 39px;
+  top: 349px;
+  left: 1114px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-overlap-wrapper {
+  top: 507px;
+  left: 206px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.gov .gov-img {
+  top: 97px;
+  left: 63px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.gov .gov-text-wrapper-10 {
+  top: 338px;
+  left: 49px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-overlap-group-2 {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 38px;
+  left: 284px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.gov .gov-text-wrapper-11 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 306px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov .gov-overlap-3 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 251px;
+  left: 150px;
+}
+
+.gov .gov-overlap-group-wrapper {
+  top: 2006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.gov .gov-div-wrapper {
+  top: 1006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.gov .gov-frame {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 885px;
+  left: 894px;
+}
+
+.gov-page {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gov-page .gov-content {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 3183px;
+  position: relative;
+}
+
+.gov-page .gov-overlap {
+  position: relative;
+  width: 1440px;
+  min-height: 100vh;
+  height: auto;
+  margin-top: 97px;
+  background-color: #f7f7f7;
+  padding-bottom: 50px;
+}
+
+.gov-page .gov-rectangle {
+  position: relative;
+  width: 1181px;
+  height: auto;
+  margin: 225px auto 50px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+  padding: 20px;
+}
+
+.gov-page .gov-group {
+  top: 1506px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+/*.gov.ejs 전용 스타일 계속 */
+.gov-page .gov-overlap-group {
+  position: relative;
+  width: 1200px;
+  height: 505px;
+  top: -5px;
+  left: -80px;
+}
+
+.gov-page .search-box {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin-left: 133px;
+  
+  box-sizing: border-box;
+  position: relative;
+  width: 1200px;
+  height: 271px;
+  top: 230px;
+}
+
+
+.gov-page .gov-image {
+  top: 98px;
+  left: 130px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: contain;  }
+
+.gov-page .gov-text-wrapper {
+   position: absolute;
+   width: 250px;        /* 원래 너비 유지 */
+   height: 62px;
+   top: 339px;
+   left: 84px;         /* left 값 조정 */
+   font-family: 'GmarketSansMedium', sans-serif;
+   margin-top: 20px;
+   font-weight: 800;
+   color: #000000;
+   font-size: 20px;
+   text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov-page .gov-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 350px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.gov-page .gov-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.gov-page .gov-p {
+  width: 96px;  
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov-page .gov-span {
+  color: #000000;
+}
+
+.gov-page .gov-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+  display: flex;           /* Flexbox 사용 */
+  align-items: center;     /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  text-align: center;      /* 텍스트 자체도 중앙 정렬 */
+  margin-left: 51px;
+}
+
+.gov-page .gov-div-2 {
+  width: 255px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov-page .gov-text-wrapper-3 {
+  color: #000000;
+  font-size: 16px;
+}
+
+.gov-page .gov-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.gov-page .gov-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 109px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 21px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov-page .gov-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 300px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.gov-page .gov-element-CGV {
+  position: absolute;
+  width: 700px;
+  top: 88px;
+  left: 0px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 30px;  /* 24px에서 30px로 줄간격 증가 */
+  display: flex;
+  flex-direction: column;
+  max-height: calc(30px * 6);  /* 줄 높이(30px) * 6줄 = 최대 6줄까지만 표시 */
+  overflow: hidden;
+}
+
+.gov-page .gov-rectangle-3 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/*.gov.ejs 검색 스타일 */
+.gov .gov-search-wrapper {
+  position: absolute;
+  top: 338px;
+  left: 251px;
+  display: flex;
+  align-items: center;
+}
+
+.gov .gov-search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.gov .gov-search-input {
+  width: 863px;
+  height: 62px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 25px;
+  color: #b2afaf;
+}
+
+.gov .gov-search-button {
+  width: 89px;
+  height: 62px;
+  background-color: #f9c20b;
+  border-radius: 10px;
+  border: none;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.gov .gov-search-button:hover {
+  background-color: #e5e5e5;
+}
+
+.gov .rectangle-2 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 221px;
+  background-color: #f9c20b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gov .text-wrapper {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 203px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #0d0c0c;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.gov .rectangle-3 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 431px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gov .text-wrapper-2 {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 413px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #848484;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.gov .rectangle-4 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 641px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gov .text-wrapper-3 {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 623px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #848484;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.gov .rectangle-5 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 851px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gov .text-wrapper-4 {
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 833px;
+  color: #848484;
+  font-size: 28px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.gov .rectangle-6 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 1061px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gov .text-wrapper-5 {
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 1043px;
+  color: #848484;
+  font-size: 28px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+.gov .rectangle-2.active,
+.gov .rectangle-3.active,
+.gov .rectangle-4.active,
+.gov .rectangle-5.active,
+.gov .rectangle-6.active {
+  background-color: #f9c20b;  /* 활성화 시 진한 노란색 */
+}
+
+/* 활성화된 text-wrapper의 스타일 */
+.gov .text-wrapper.active,
+.gov .text-wrapper-2.active,
+.gov .text-wrapper-3.active,
+.gov .text-wrapper-4.active,
+.gov .text-wrapper-5.active {
+  color: #0d0c0c;  /* 활성화 시 검정색 */
+}
+
+/* 기본 네비게이션 스타일 - box-shadow 없음 */
+.main .rectangle-22,
+.main .rectangle-23,
+.main .rectangle-24,
+.main .rectangle-25,
+.main .rectangle-26 {
+  position: relative;
+  width: 242px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+.main .rectangle-27{
+  position: relative;
+  width: 242px;
+  height: 97px;
+  background-color: #fcfcfc;
+}
+
+.gov .gov-div-2 .gov-text-wrapper-2 {
+  position: relative;
+  left: 0;  /* -27px에서 0으로 변경 */
+  transform: translateX(-50%);  /* 가운데 정렬을 위해 추가 */
+  margin-left: 129px;  /* 가운데 정렬을 위해 추가 */
+}
+
+.twenty-page .twenty-benefit-item {
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  height: 30px;  /* 각 항목의 높이도 24px로 고정 */
+  white-space: nowrap;  /* 한 줄로 표시 */
+  overflow: hidden;     /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis;  /* 넘치는 텍스트를 ...으로 표시 */
+}
+
+/* benefit-item의 높이도 맞춰서 조정 */
+.gov-page .gov-benefit-item {
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  height: 30px;  /* 24px에서 30px로 변경 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

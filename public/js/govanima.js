@@ -66,18 +66,18 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // 신용카드/체크카드 탭 관련 코드
     const wrapper6 = document.querySelector('.gov-text-wrapper-6');
-    const wrapper61 = document.querySelector('.gov-text-wrapper-6-1');
-    const wrapper7 = document.querySelector('.gov-text-wrapper-7');
+    const wrapper62 = document.querySelector('.gov-text-wrapper-6-1');
+    const wrapper8 = document.querySelector('.gov-text-wrapper-7');
     const wrapper71 = document.querySelector('.gov-text-wrapper-7-1');
   
-    if (wrapper7) {
+    if (wrapper8) {
         wrapper7.addEventListener('click', function(e) {
             e.preventDefault();
             window.location.href = '/gov_check';
         });
     }
   
-    if (wrapper61) {
+    if (wrapper62) {
         wrapper61.addEventListener('click', function(e) {
             e.preventDefault();
             window.location.href = '/gov';
