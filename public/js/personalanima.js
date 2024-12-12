@@ -1,38 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
     // URL에 따라 body에 data-page 속성 추가
     const currentPath = window.location.pathname;
-    if (currentPath === '/personal') {
-        document.body.setAttribute('data-page', 'personal');
-    } else if (currentPath === '/personal') {
+    // personal로 시작하는 모든 경로에 대해 'personal' data-page 속성 설정
+    if (currentPath.startsWith('/personal')) {
         document.body.setAttribute('data-page', 'personal');
     }
-  
-    // 카테고리 관련 요소들이 있는 경우에만 실행
-    if (document.querySelector('.rectangle-2')) {  // 카테고리 요소 존재 여부 확인
+    if (document.querySelector('.rectangle-2')) {
         const categories = [
             {
                 rectangle: document.querySelector('.rectangle-2'),
-                text: document.querySelector('.text-wrapper')
+                text: document.querySelector('.text-wrapper'),
+                keyword: '교통'
             },
             {
                 rectangle: document.querySelector('.rectangle-3'),
-                text: document.querySelector('.text-wrapper-2')
+                text: document.querySelector('.text-wrapper-2'),
+                keyword: '주유'
             },
             {
                 rectangle: document.querySelector('.rectangle-4'),
-                text: document.querySelector('.text-wrapper-3')
+                text: document.querySelector('.text-wrapper-3'),
+                keyword: '쇼핑'
             },
             {
                 rectangle: document.querySelector('.rectangle-5'),
-                text: document.querySelector('.text-wrapper-4')
+                text: document.querySelector('.text-wrapper-4'),
+                keyword: '커피'
             },
             {
                 rectangle: document.querySelector('.rectangle-6'),
-                text: document.querySelector('.text-wrapper-5')
+                text: document.querySelector('.text-wrapper-5'),
+                keyword: '통신'
             }
         ];
-  
-        // 카테고리 비활성화 함수
+
+        // URL에서 현재 선택된 카테고리 확인
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentKeyword = urlParams.get('keyword');
+
         function deactivateAll() {
             categories.forEach(category => {
                 category.rectangle.classList.remove('active');
@@ -41,47 +46,44 @@ document.addEventListener('DOMContentLoaded', function() {
                 category.text.style.color = '#848484';
             });
         }
-  
-        // 카테고리 클릭 이벤트
+
+        function activateCategory(category) {
+            deactivateAll();
+            category.rectangle.classList.add('active');
+            category.text.classList.add('active');
+            category.rectangle.style.backgroundColor = '#f9c20b';
+            category.text.style.color = '#0d0c0c';
+        }
+
+        // 페이지 로드 시 현재 선택된 카테고리 활성화
+        if (currentKeyword) {
+            const activeCategory = categories.find(cat => cat.keyword === currentKeyword);
+            if (activeCategory) {
+                activateCategory(activeCategory);
+            }
+        } else {
+            // 기본값으로 교통 활성화
+            activateCategory(categories[0]);
+        }
+
         categories.forEach(category => {
-            if (category.rectangle && category.text) {  // null 체크 추가
+            if (category.rectangle && category.text) {
                 category.rectangle.addEventListener('click', function() {
-                    deactivateAll();
-                    category.rectangle.classList.add('active');
-                    category.text.classList.add('active');
-                    category.rectangle.style.backgroundColor = '#f9c20b';
-                    category.text.style.color = '#0d0c0c';
+                    activateCategory(category);
+                    filterCards(category.keyword);
                 });
-  
+
                 category.text.addEventListener('click', function() {
-                    deactivateAll();
-                    category.rectangle.classList.add('active');
-                    category.text.classList.add('active');
-                    category.rectangle.style.backgroundColor = '#f9c20b';
-                    category.text.style.color = '#0d0c0c';
+                    activateCategory(category);
+                    filterCards(category.keyword);
                 });
             }
         });
     }
-  
-    // 신용카드/체크카드 탭 관련 코드
-    const wrapper6 = document.querySelector('.twenty-text-wrapper-6');
-    const wrapper61 = document.querySelector('.twenty-text-wrapper-6-1');
-    const wrapper7 = document.querySelector('.twenty-text-wrapper-7');
-    const wrapper71 = document.querySelector('.twenty-text-wrapper-7-1');
-  
-    if (wrapper7) {
-        wrapper7.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = '/personal';
-        });
+});
+
+function filterCards(keyword) {
+    if (keyword) {
+        window.location.href = `/personal/filter?keyword=${encodeURIComponent(keyword)}`;
     }
-  
-    if (wrapper61) {
-        wrapper61.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = '/personal';
-        });
-    }
-  });
-  
+}
