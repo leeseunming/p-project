@@ -20,6 +20,10 @@ router.get('/personal', (req, res) => {
     root.personal(req, res); // personal 페이지 처리
 });
 
+router.get('/personal/filter', (req, res) => {
+    root.personalFilter(req, res); // personal 필터링
+});
+
 router.get('/event', (req, res) => {
     root.event(req, res); // personal 페이지 처리
 });
@@ -32,9 +36,7 @@ router.get('/gov_check', (req, res) => {
     root.govCheck(req, res)
 });
 
-router.get('/personal-check', (req, res) => {
-    root.personalCheck(req, res)
-});
+
 
 // 검색 처리
 router.post('/search_twenty', (req, res) => {
