@@ -1781,12 +1781,12 @@ body[data-page="gov_check"] .rectangle-24 {
 }
 
 /* 퍼스널 맞춤 카드 */
-body[data-page="/personal"] .rectangle-25 {
+body[data-page="personal"] .rectangle-25 {
   border-bottom: 4px solid #000000;
 }
 
 /* 이달의 이벤트 */
-body[data-page="/event"] .rectangle-26 {
+body[data-page="event"] .rectangle-26 {
   border-bottom: 4px solid #000000;
 }
 
@@ -2992,16 +2992,6 @@ body[data-page="event"] .event-text-wrapper-7-1 {
     display: none;
 }
 
-body[data-page="gov_check"] .event-text-wrapper-6,
-body[data-page="gov_check"] .event-text-wrapper-7 {
-    display: none;
-}
-
-body[data-page="gov_check"] .event-text-wrapper-6-1,
-body[data-page="gov_check"] .event-text-wrapper-7-1 {
-    display: flex;
-}
-
 .event .event-rectangle-6 {
   position: absolute;
   width: 863px;
@@ -3571,6 +3561,1752 @@ body[data-page="gov_check"] .event-text-wrapper-7-1 {
 }
 
 .event .event-div-2 .event-text-wrapper-2 {
+  position: relative;
+  left: 0;  /* -27px에서 0으로 변경 */
+  transform: translateX(-50%);  /* 가운데 정렬을 위해 추가 */
+  margin-left: 129px;  /* 가운데 정렬을 위해 추가 */
+}
+
+.personal {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.personal .personal-page {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  min-height: 1000px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
+  position: relative;
+  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
+  overflow: visible;
+}
+
+.personal .personal-overlap {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 97px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.personal .personal-rectangle {
+  position: absolute;
+  width: 1181px;
+  height: 2396px;
+  top: 225px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+}
+
+/*.personal.ejs 스타일 계속 */
+.personal .personal-group {
+  top: 506px !important;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.personal .personal-overlap-group {
+  position: relative;
+  width: 1100px;
+  height: 505px;
+  top: -3px;
+  left: -3px;
+  background-color: #ffffff;
+  
+  /* 보더 관련 스타일 */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;  /* 중앙 정렬을 위해 50%로 설정 */
+    transform: translateX(-50%);  /* 중앙 정렬을 위한 변환 */
+    width: 1050px;  /* 보더 전체 길이 - 양쪽으로 400px씩 */
+    height: 2px;
+    bottom: 0px;
+    background-color: #bebebe;
+  }
+}
+.personal .personal-image {
+  top: 98px;
+  left: 57px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.personal .personal-text-wrapper {
+  top: 339px;
+  left: 43px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 278px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.personal .personal-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.personal .personal-p {
+  width: 136px;
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-span {
+  color: #000000;
+  display: inline; /* 기본값을 명시 */
+}
+
+.personal .personal-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  position: relative;
+  left: -25px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.personal .personal-div-2 {
+  width: 215px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.personal .personal-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 108px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 300px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-element-CGV {
+  position: absolute;
+  width: 600px;
+  top: 60px !important;
+  left: 50px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.personal .personal-benefit-item {
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  height: 24px;  /* 각 항목의 높이도 24px로 고정 */
+  white-space: nowrap;  /* 한 줄로 표시 */
+  overflow: hidden;     /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis;  /* 넘치는 텍스트를 ...으로 표시 */
+}
+
+.personal .personal-text-wrapper-6,
+.personal .personal-text-wrapper-7,
+.personal .personal-text-wrapper-6-1,
+.personal .personal-text-wrapper-7-1 {
+    position: absolute;
+    width: 322px;
+    font-size: 32px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-out;
+}
+
+/* 신용카드 활성화 스타일 */
+.personal .personal-text-wrapper-6 {
+    background: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    height: 102px;
+    top: 128px;
+    left: 134px;
+    color: #000000;
+}
+
+.personal .personal-text-wrapper-7 {
+    border-radius: 20px 20px 0px 0px;
+    background-color: #fcdf7f;
+    height: 91px;
+    top: 139px;
+    left: 454px;
+    color: #848484;
+}
+
+/* 체크카드 활성화 스타일 */
+
+.personal .personal-text-wrapper-6-1 {
+    background: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    height: 91px;
+    top: 139px;
+    left: 134px;
+    color: #848484;
+    display: none;
+}
+
+.personal .personal-text-wrapper-7-1 {
+    border-radius: 20px 20px 0px 0px;
+    background-color: #F9c20B;
+    height: 102px;
+    top: 128px;
+    left: 454px;
+    color: #000000;
+    display: none;
+}
+
+body[data-page="personal"] .personal-text-wrapper-6, 
+body[data-page="personal"] .personal-text-wrapper-7{
+    display: flex;
+}
+
+body[data-page="personal"] .personal-text-wrapper-6-1,
+body[data-page="personal"] .personal-text-wrapper-7-1 {
+    display: none;
+}
+
+.personal .personal-rectangle-6 {
+  position: absolute;
+  width: 863px;
+  height: 62px;
+  top: 338px;
+  left: 251px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.personal .personal-rectangle-7 {
+  position: absolute;
+  width: 89px;
+  height: 62px;
+  top: 338px;
+  left: 1128px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.personal .personal-text-wrapper-8 {
+  width: 775px;
+  height: 39px;
+  top: 350px;
+  left: 275px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-text-wrapper-9 {
+  width: 108px;
+  height: 39px;
+  top: 349px;
+  left: 1114px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-overlap-wrapper {
+  top: 507px;
+  left: 206px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.personal .personal-img {
+  top: 97px;
+  left: 63px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.personal .personal-text-wrapper-10 {
+  top: 338px;
+  left: 49px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-overlap-group-2 {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 38px;
+  left: 284px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.personal .personal-text-wrapper-11 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 306px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-overlap-3 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 251px;
+  left: 150px;
+}
+
+.personal .personal-overlap-group-wrapper {
+  top: 2006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.personal .personal-div-wrapper {
+  top: 1006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.personal .personal-frame {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 885px;
+  left: 894px;
+}
+
+.personal-page {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.personal-page .personal-content {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 3183px;
+  position: relative;
+}
+
+.personal-page .personal-overlap {
+  position: relative;
+  width: 1440px;
+  min-height: 100vh;
+  height: auto;
+  margin-top: 97px;
+  background-color: #f7f7f7;
+  padding-bottom: 50px;
+}
+
+.personal-page .personal-rectangle {
+  position: relative;
+  width: 1181px;
+  height: auto;
+  margin: 225px auto 50px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+  padding: 20px;
+}
+
+.personal-page .personal-group {
+  top: 1506px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+/*.personal.ejs 전용 스타일 계속 */
+.personal-page .personal-overlap-group {
+  position: relative;
+  width: 1200px;
+  height: 505px;
+  top: -5px;
+  left: -80px;
+}
+
+.personal-page .search-box {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin-left: 133px;
+  
+  box-sizing: border-box;
+  position: relative;
+  width: 1200px;
+  height: 271px;
+  top: 230px;
+}
+
+
+.personal-page .personal-image {
+  top: 98px;
+  left: 130px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: contain;  }
+
+.personal-page .personal-text-wrapper {
+   position: absolute;
+   width: 250px;        /* 원래 너비 유지 */
+   height: 62px;
+   top: 339px;
+   left: 84px;         /* left 값 조정 */
+   font-family: 'GmarketSansMedium', sans-serif;
+   margin-top: 20px;
+   font-weight: 800;
+   color: #000000;
+   font-size: 20px;
+   text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 350px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.personal-page .personal-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.personal-page .personal-p {
+  width: 96px;  
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-span {
+  color: #000000;
+}
+
+.personal-page .personal-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+  display: flex;           /* Flexbox 사용 */
+  align-items: center;     /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  text-align: center;      /* 텍스트 자체도 중앙 정렬 */
+  margin-left: 51px;
+}
+
+.personal-page .personal-div-2 {
+  width: 255px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-text-wrapper-3 {
+  color: #000000;
+  font-size: 16px;
+}
+
+.personal-page .personal-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.personal-page .personal-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 109px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 21px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 300px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-element-CGV {
+  position: absolute;
+  width: 700px;
+  top: 88px;
+  left: 0px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 30px;  /* 24px에서 30px로 줄간격 증가 */
+  display: flex;
+  flex-direction: column;
+  max-height: calc(30px * 6);  /* 줄 높이(30px) * 6줄 = 최대 6줄까지만 표시 */
+  overflow: hidden;
+}
+
+.personal-page .personal-rectangle-3 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/*.personal.ejs 검색 스타일 */
+.personal .personal-search-wrapper {
+  position: absolute;
+  top: 338px;
+  left: 251px;
+  display: flex;
+  align-items: center;
+}
+
+.personal .personal-search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.personal .personal-search-input {
+  width: 863px;
+  height: 62px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 25px;
+  color: #b2afaf;
+}
+
+.personal .personal-search-button {
+  width: 89px;
+  height: 62px;
+  background-color: #f9c20b;
+  border-radius: 10px;
+  border: none;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.personal .personal-search-button:hover {
+  background-color: #e5e5e5;
+}
+
+.personal .rectangle-2 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 221px;
+  background-color: #f9c20b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 203px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #0d0c0c;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-3 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 431px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper-2 {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 413px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #848484;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-4 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 641px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper-3 {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 623px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #848484;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-5 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 851px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper-4 {
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 833px;
+  color: #848484;
+  font-size: 28px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-6 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 1061px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper-5 {
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 1043px;
+  color: #848484;
+  font-size: 28px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-2.active,
+.personal .rectangle-3.active,
+.personal .rectangle-4.active,
+.personal .rectangle-5.active,
+.personal .rectangle-6.active {
+  background-color: #f9c20b;  /* 활성화 시 진한 노란색 */
+}
+
+/* 활성화된 text-wrapper의 스타일 */
+.personal .text-wrapper.active,
+.personal .text-wrapper-2.active,
+.personal .text-wrapper-3.active,
+.personal .text-wrapper-4.active,
+.personal .text-wrapper-5.active {
+  color: #0d0c0c;  /* 활성화 시 검정색 */
+}
+
+.personal-page .personal-benefit-item {
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  height: 30px;  /* 24px에서 30px로 변경 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.personal .personal-div-2 .personal-text-wrapper-2 {
+  position: relative;
+  left: 0;  /* -27px에서 0으로 변경 */
+  transform: translateX(-50%);  /* 가운데 정렬을 위해 추가 */
+  margin-left: 129px;  /* 가운데 정렬을 위해 추가 */
+}
+
+.twenty .search-box-1 {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin-left: 133px;
+  box-sizing: border-box;
+  position: relative;
+  width: 1200px;
+  height: 271px;
+  top: 230px;
+}
+
+.personal {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.personal .personal-page {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  min-height: 1000px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
+  position: relative;
+  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
+  overflow: visible;
+}
+
+.personal .personal-overlap {
+  position: absolute;
+  width: 1440px;
+  height: 2845px;
+  top: 97px;
+  left: 0;
+  background-color: #f7f7f7;
+}
+
+.personal .personal-rectangle {
+  position: absolute;
+  width: 1181px;
+  height: 2396px;
+  top: 225px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+}
+
+/*.personal.ejs 스타일 계속 */
+.personal .personal-group {
+  top: 506px !important;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.personal .personal-overlap-group {
+  position: relative;
+  width: 1100px;
+  height: 505px;
+  top: -3px;
+  left: -3px;
+  background-color: #ffffff;
+  
+  /* 보더 관련 스타일 */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;  /* 중앙 정렬을 위해 50%로 설정 */
+    transform: translateX(-50%);  /* 중앙 정렬을 위한 변환 */
+    width: 1050px;  /* 보더 전체 길이 - 양쪽으로 400px씩 */
+    height: 2px;
+    bottom: 0px;
+    background-color: #bebebe;
+  }
+}
+.personal .personal-image {
+  top: 98px;
+  left: 57px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.personal .personal-text-wrapper {
+  top: 339px;
+  left: 43px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 278px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.personal .personal-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.personal .personal-p {
+  width: 136px;
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-span {
+  color: #000000;
+  display: inline; /* 기본값을 명시 */
+}
+
+.personal .personal-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  position: relative;
+  left: -25px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.personal .personal-div-2 {
+  width: 215px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.personal .personal-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 108px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 300px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-element-CGV {
+  position: absolute;
+  width: 600px;
+  top: 60px !important;
+  left: 50px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.personal .personal-benefit-item {
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  height: 24px;  /* 각 항목의 높이도 24px로 고정 */
+  white-space: nowrap;  /* 한 줄로 표시 */
+  overflow: hidden;     /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis;  /* 넘치는 텍스트를 ...으로 표시 */
+}
+
+.personal .personal-text-wrapper-6,
+.personal .personal-text-wrapper-7,
+.personal .personal-text-wrapper-6-1,
+.personal .personal-text-wrapper-7-1 {
+    position: absolute;
+    width: 322px;
+    font-size: 32px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-out;
+}
+
+/* 신용카드 활성화 스타일 */
+.personal .personal-text-wrapper-6 {
+    background: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    height: 102px;
+    top: 128px;
+    left: 134px;
+    color: #000000;
+}
+
+.personal .personal-text-wrapper-7 {
+    border-radius: 20px 20px 0px 0px;
+    background-color: #fcdf7f;
+    height: 91px;
+    top: 139px;
+    left: 454px;
+    color: #848484;
+}
+
+/* 체크카드 활성화 스타일 */
+
+.personal .personal-text-wrapper-6-1 {
+    background: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    height: 91px;
+    top: 139px;
+    left: 134px;
+    color: #848484;
+    display: none;
+}
+
+.personal .personal-text-wrapper-7-1 {
+    border-radius: 20px 20px 0px 0px;
+    background-color: #F9c20B;
+    height: 102px;
+    top: 128px;
+    left: 454px;
+    color: #000000;
+    display: none;
+}
+
+body[data-page="personal"] .personal-text-wrapper-6, 
+body[data-page="personal"] .personal-text-wrapper-7{
+    display: flex;
+}
+
+body[data-page="personal"] .personal-text-wrapper-6-1,
+body[data-page="personal"] .personal-text-wrapper-7-1 {
+    display: none;
+}
+
+.personal .personal-rectangle-6 {
+  position: absolute;
+  width: 863px;
+  height: 62px;
+  top: 338px;
+  left: 251px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.personal .personal-rectangle-7 {
+  position: absolute;
+  width: 89px;
+  height: 62px;
+  top: 338px;
+  left: 1128px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.personal .personal-text-wrapper-8 {
+  width: 775px;
+  height: 39px;
+  top: 350px;
+  left: 275px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-text-wrapper-9 {
+  width: 108px;
+  height: 39px;
+  top: 349px;
+  left: 1114px;
+  color: #b2afaf;
+  font-size: 32px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-overlap-wrapper {
+  top: 507px;
+  left: 206px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.personal .personal-img {
+  top: 97px;
+  left: 63px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.personal .personal-text-wrapper-10 {
+  top: 338px;
+  left: 49px;
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-overlap-group-2 {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 38px;
+  left: 284px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.personal .personal-text-wrapper-11 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 306px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal .personal-overlap-3 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 251px;
+  left: 150px;
+}
+
+.personal .personal-overlap-group-wrapper {
+  top: 2006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.personal .personal-div-wrapper {
+  top: 1006px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+.personal .personal-frame {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 885px;
+  left: 894px;
+}
+
+.personal-page {
+  background-color: #f4f4f4fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.personal-page .personal-content {
+  background-color: #f4f4f4fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 3183px;
+  position: relative;
+}
+
+.personal-page .personal-overlap {
+  position: relative;
+  width: 1440px;
+  min-height: 100vh;
+  height: auto;
+  margin-top: 97px;
+  background-color: #f7f7f7;
+  padding-bottom: 50px;
+}
+
+.personal-page .personal-rectangle {
+  position: relative;
+  width: 1181px;
+  height: auto;
+  margin: 225px auto 50px;
+  background-color: #ffffff;
+  border-radius: 0px 50px 50px 50px;
+  padding: 20px;
+}
+
+.personal-page .personal-group {
+  top: 1506px;
+  left: 212px;
+  position: absolute;
+  width: 1039px;
+  height: 499px;
+}
+
+/*.personal.ejs 전용 스타일 계속 */
+.personal-page .personal-overlap-group {
+  position: relative;
+  width: 1200px;
+  height: 505px;
+  top: -5px;
+  left: -80px;
+}
+
+.personal-page .search-box {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin-left: 133px;
+  
+  box-sizing: border-box;
+  position: relative;
+  width: 1200px;
+  height: 271px;
+  top: 230px;
+}
+
+
+.personal-page .personal-image {
+  top: 98px;
+  left: 130px;
+  position: absolute;
+  width: 157px;
+  height: 240px;
+  object-fit: contain;  }
+
+.personal-page .personal-text-wrapper {
+   position: absolute;
+   width: 250px;        /* 원래 너비 유지 */
+   height: 62px;
+   top: 339px;
+   left: 84px;         /* left 값 조정 */
+   font-family: 'GmarketSansMedium', sans-serif;
+   margin-top: 20px;
+   font-weight: 800;
+   color: #000000;
+   font-size: 20px;
+   text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-div {
+  position: absolute;
+  width: 713px;
+  height: 423px;
+  top: 39px;
+  left: 350px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.personal-page .personal-overlap-2 {
+  position: absolute;
+  width: 443px;
+  height: 152px;
+  top: 250px;
+  left: 156px;
+}
+
+.personal-page .personal-p {
+  width: 96px;  
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-span {
+  color: #000000;
+}
+
+.personal-page .personal-text-wrapper-2 {
+  color: #626262;
+  font-size: 16px;
+  display: flex;           /* Flexbox 사용 */
+  align-items: center;     /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  text-align: center;      /* 텍스트 자체도 중앙 정렬 */
+  margin-left: 51px;
+}
+
+.personal-page .personal-div-2 {
+  width: 255px;
+  top: 0;
+  left: 228px;
+  color: transparent;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-text-wrapper-3 {
+  color: #000000;
+  font-size: 16px;
+}
+
+.personal-page .personal-rectangle-2 {
+  position: absolute;
+  width: 167px;
+  height: 60px;
+  top: 92px;
+  left: 111px;
+  background-color: #f9c20b;
+  border-radius: 20px;
+}
+
+.personal-page .personal-text-wrapper-4 {
+  width: 113px;
+  height: 35px;
+  top: 109px;
+  left: 138px;
+  color: #000000d4;
+  font-size: 21px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-text-wrapper-5 {
+  width: 95px;
+  height: 49px;
+  top: 13px;
+  left: 300px;
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.personal-page .personal-element-CGV {
+  position: absolute;
+  width: 700px;
+  top: 88px;
+  left: 0px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #626262;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 30px;  /* 24px에서 30px로 줄간격 증가 */
+  display: flex;
+  flex-direction: column;
+  max-height: calc(30px * 6);  /* 줄 높이(30px) * 6줄 = 최대 6줄까지만 표시 */
+  overflow: hidden;
+}
+
+.personal-page .personal-rectangle-3 {
+  position: absolute;
+  width: 322px;
+  height: 102px;
+  top: 128px;
+  left: 135px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/*.personal.ejs 검색 스타일 */
+.personal .personal-search-wrapper {
+  position: absolute;
+  top: 338px;
+  left: 251px;
+  display: flex;
+  align-items: center;
+}
+
+.personal .personal-search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.personal .personal-search-input {
+  width: 863px;
+  height: 62px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 25px;
+  color: #b2afaf;
+}
+
+.personal .personal-search-button {
+  width: 89px;
+  height: 62px;
+  background-color: #f9c20b;
+  border-radius: 10px;
+  border: none;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.personal .personal-search-button:hover {
+  background-color: #e5e5e5;
+}
+
+.personal .rectangle-2 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 221px;
+  background-color: #f9c20b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 203px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #0d0c0c;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-3 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 431px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper-2 {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 413px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #848484;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-4 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 641px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper-3 {
+  position: absolute;
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 623px;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  color: #848484;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-5 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 851px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper-4 {
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 833px;
+  color: #848484;
+  font-size: 28px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-6 {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  top: 378px;
+  left: 1061px;
+  background-color: #fcdf7f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.personal .text-wrapper-5 {
+  width: 205px;
+  height: 39px;
+  top: 393px;
+  left: 1043px;
+  color: #848484;
+  font-size: 28px;
+  position: absolute;
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.personal .rectangle-2.active,
+.personal .rectangle-3.active,
+.personal .rectangle-4.active,
+.personal .rectangle-5.active,
+.personal .rectangle-6.active {
+  background-color: #f9c20b;  /* 활성화 시 진한 노란색 */
+}
+
+/* 활성화된 text-wrapper의 스타일 */
+.personal .text-wrapper.active,
+.personal .text-wrapper-2.active,
+.personal .text-wrapper-3.active,
+.personal .text-wrapper-4.active,
+.personal .text-wrapper-5.active {
+  color: #0d0c0c;  /* 활성화 시 검정색 */
+}
+
+.personal-page .personal-benefit-item {
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  height: 30px;  /* 24px에서 30px로 변경 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.personal .personal-div-2 .personal-text-wrapper-2 {
   position: relative;
   left: 0;  /* -27px에서 0으로 변경 */
   transform: translateX(-50%);  /* 가운데 정렬을 위해 추가 */
