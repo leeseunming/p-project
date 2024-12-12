@@ -1,171 +1,56 @@
 <div class="twenty">
-    <div class="twenty-page">
-      <div class="twenty-overlap">
-        <div class="twenty-rectangle"></div>
-        <div class="twenty-group">
-          <div class="twenty-overlap-group">
-            <img class="twenty-image" src="img/card1.png" />
-            <div class="twenty-text-wrapper">현대 OTD 카드</div>
-            <div class="twenty-div">
-              <div class="twenty-overlap-2">
-                <p class="twenty-p">
-                  <span class="twenty-span">전월실적<br /></span> 
-                  <span class="twenty-text-wrapper-2"><br />매달 30만원 이상</span>
-                </p>
-                <p class="twenty-div-2">
-                  <span class="twenty-span">연회비<br /></span>
-                  <span class="twenty-text-wrapper-3"><br /></span>
-                  <span class="twenty-text-wrapper-2">15000원</span>
-                </p>
-                <div class="twenty-rectangle-2"></div>
-                <div class="twenty-text-wrapper-4">상세보기</div>
-              </div>
-              <div class="twenty-text-wrapper-5">주요 혜택</div>
-              <div class="twenty-element-CGV">
-                <div class="twenty-benefit-row">
-                  <div class="twenty-benefit-item">주유 1L당 60원</div>
-                  <div class="twenty-benefit-item">온라인 쇼핑 10%할인</div>
-                  <div class="twenty-benefit-item">편의점 10%할인</div>
-                </div>
-                <div class="twenty-benefit-row">
-                  <div class="twenty-benefit-item">CGV 5000원 할인</div>
-                  <div class="twenty-benefit-item">스타벅스 1000원 할인</div>
-                  <div class="twenty-benefit-item">넷플릭스 20% 할인</div>
-                </div>
-              </div>
+  <div class="twenty-page">
+    <div class="twenty-overlap">
+      <div class="twenty-rectangle"></div>
+      <div class="twenty-group">
+        <% cards.forEach(card => { %>
+        <div class="twenty-overlap-group">
+          <img class="twenty-image" src="<%= card.image_url || 'img/card-placeholder.png' %>" alt="카드 이미지" />
+          <div class="twenty-text-wrapper"><%= card.card_name %></div>
+          <div class="twenty-div">
+            <div class="twenty-overlap-2">
+              <p class="twenty-p">
+                <span class="twenty-span">전월실적<br /></span> 
+                <span class="twenty-text-wrapper-2"><%= card.monthly_spending_requirement || '조건 없음' %></span>
+              </p>
+              <p class="twenty-div-2">
+                <span class="twenty-span">연회비<br /></span>
+                <span class="twenty-text-wrapper-2"><%= card.annual_fee %></span>
+              </p>
+              <div class="twenty-rectangle-2"></div>
+              <div class="twenty-text-wrapper-4">상세보기</div>
+            </div>
+            <div class="twenty-text-wrapper-5">주요 혜택</div>
+            <div class="twenty-element-CGV">
+              <% card.benefit.split(',').forEach(benefit => { %>
+              <div class="twenty-benefit-item"><%= benefit.trim() %></div>
+              <% }); %>
             </div>
           </div>
         </div>
-        <div class="twenty-rectangle-3"></div>
-        <div class="twenty-rectangle-3_1"></div>  <!-- 이 부분이 추가되어야 함 -->
-        <div class="twenty-rectangle-4"></div>
-        <div class="twenty-rectangle-5"></div>
-        <div class="twenty-text-wrapper-6">신용카드</div>
-        <div class="twenty-text-wrapper-7">체크카드</div>
-        <div class="twenty-rectangle-6"></div>
-        <div class="twenty-rectangle-7"></div>
-        <div class="twenty-search-wrapper">
-          <form class="twenty-search-form" action="/search" method="post">
-            <input 
-              class="twenty-search-input" 
-              type="search" 
-              placeholder="찾고싶은 카드" 
-              name="search"
-              aria-label="Search"
-            />
-            <button class="twenty-search-button" type="submit">검색</button>
-          </form>
-        </div>
-  
-        <div class="twenty-overlap-wrapper">
-          <div class="twenty-overlap-group">
-            <img class="twenty-img" src="img/card1.png" />
-            <div class="twenty-text-wrapper-10">현대 OTD 카드</div>
-            <div class="twenty-overlap-group-2">
-              <div class="twenty-text-wrapper-11">주요 혜택</div>
-              <div class="twenty-element-CGV">
-                <div class="twenty-benefit-row">
-                  <div class="twenty-benefit-item">주유 1L당 60원</div>
-                  <div class="twenty-benefit-item">온라인 쇼핑 10%할인</div>
-                  <div class="twenty-benefit-item">편의점 10%할인</div>
-                </div>
-                <div class="twenty-benefit-row">
-                  <div class="twenty-benefit-item">CGV 5000원 할인</div>
-                  <div class="twenty-benefit-item">스타벅스 1000원 할인</div>
-                  <div class="twenty-benefit-item">넷플릭스 20% 할인</div>
-                </div>
-              </div>
-              <div class="twenty-overlap-3">
-                <p class="twenty-p">
-                  <span class="twenty-span">전월실적<br /></span> 
-                  <span class="twenty-text-wrapper-2"><br />매달 30만원 이상</span>
-                </p>
-                <p class="twenty-div-2">
-                  <span class="twenty-span">연회비<br /></span>
-                  <span class="twenty-text-wrapper-3"><br /></span>
-                  <span class="twenty-text-wrapper-2">15000원</span>
-                </p>
-                <div class="twenty-rectangle-2"></div>
-                <div class="twenty-text-wrapper-4">상세보기</div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="twenty-overlap-group-wrapper">
-          <div class="twenty-overlap-group">
-            <img class="twenty-image" src="img/card1.png" />
-            <div class="twenty-text-wrapper">현대 OTD 카드</div>
-            <div class="twenty-div">
-              <div class="twenty-overlap-2">
-                <p class="twenty-p">
-                  <span class="twenty-span">전월실적<br /></span> 
-                  <span class="twenty-text-wrapper-2"><br />매달 30만원 이상</span>
-                </p>
-                <p class="twenty-div-2">
-                  <span class="twenty-span">연회비<br /></span>
-                  <span class="twenty-text-wrapper-3"><br /></span>
-                  <span class="twenty-text-wrapper-2">15000원</span>
-                </p>
-                <div class="twenty-rectangle-2"></div>
-                <div class="twenty-text-wrapper-4">상세보기</div>
-              </div>
-              <div class="twenty-text-wrapper-5">주요 혜택</div>
-              <div class="twenty-element-CGV">
-                <div class="twenty-benefit-row">
-                  <div class="twenty-benefit-item">주유 1L당 60원</div>
-                  <div class="twenty-benefit-item">온라인 쇼핑 10%할인</div>
-                  <div class="twenty-benefit-item">편의점 10%할인</div>
-                </div>
-                <div class="twenty-benefit-row">
-                  <div class="twenty-benefit-item">CGV 5000원 할인</div>
-                  <div class="twenty-benefit-item">스타벅스 1000원 할인</div>
-                  <div class="twenty-benefit-item">넷플릭스 20% 할인</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="twenty-div-wrapper">
-          <div class="twenty-overlap-group">
-            <img class="twenty-image" src="img/card1.png" />
-            <div class="twenty-text-wrapper">현대 OTD 카드</div>
-            <div class="twenty-div">
-              <div class="twenty-overlap-2">
-                <p class="twenty-p">
-                  <span class="twenty-span">전월실적<br /></span> 
-                  <span class="twenty-text-wrapper-2"><br />매달 30만원 이상</span>
-                </p>
-                <p class="twenty-div-2">
-                  <span class="twenty-span">연회비<br /></span>
-                  <span class="twenty-text-wrapper-3"><br /></span>
-                  <span class="twenty-text-wrapper-2">15000원</span>
-                </p>
-                <div class="twenty-rectangle-2"></div>
-                <div class="twenty-text-wrapper-4">상세보기</div>
-              </div>
-              <div class="twenty-text-wrapper-5">주요 혜택</div>
-              <div class="twenty-element-CGV">
-                <div class="twenty-benefit-row">
-                  <div class="twenty-benefit-item">주유 1L당 60원</div>
-                  <div class="twenty-benefit-item">온라인 쇼핑 10%할인</div>
-                  <div class="twenty-benefit-item">편의점 10%할인</div>
-                </div>
-                <div class="twenty-benefit-row">
-                  <div class="twenty-benefit-item">CGV 5000원 할인</div>
-                  <div class="twenty-benefit-item">스타벅스 1000원 할인</div>
-                  <div class="twenty-benefit-item">넷플릭스 20% 할인</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="twenty-frame"></div>
+        <% }); %>
+      </div>
+      <div class="twenty-rectangle-3"></div>
+      <div class="twenty-rectangle-4"></div>
+      <div class="twenty-rectangle-5"></div>
+      <div class="twenty-text-wrapper-6">
+        <a href="/gov">신용카드</a>
+      </div>
+      <div class="twenty-text-wrapper-7">
+        <a href="/gov-check">체크카드</a>
+      </div>
+      <div class="twenty-search-wrapper">
+        <form class="twenty-search-form" action="/search" method="post">
+          <input 
+            class="twenty-search-input" 
+            type="search" 
+            placeholder="찾고싶은 카드" 
+            name="search"
+            aria-label="Search"
+          />
+          <button class="twenty-search-button" type="submit">검색</button>
+        </form>
       </div>
     </div>
   </div>
-
-  <script src="/js/anima.js"></script>
-  
+</div>

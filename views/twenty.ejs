@@ -1,7 +1,6 @@
 <div class="twenty">
   <div class="twenty-page">
     <div class="twenty-overlap">
-      <div class="twenty-rectangle"></div>
       <div class="twenty-group">
         <% cards.forEach(card => { %>
         <div class="twenty-overlap-group">
@@ -29,7 +28,7 @@
             <!-- 혜택 표시 -->
             <div class="twenty-text-wrapper-5">주요 혜택</div>
             <div class="twenty-element-CGV">
-              <% card.benefit.split(',').forEach(benefit => { %>
+              <% card.benefit.split(';').forEach(benefit => { %>
               <div class="twenty-benefit-item"><%= benefit.trim() %></div>
               <% }); %>
             </div>
@@ -37,12 +36,21 @@
         </div>
         <% }); %>
       </div>
-      <div class="twenty-rectangle-3"></div>
-      <div class="twenty-rectangle-3_1"></div>
-      <div class="twenty-rectangle-4"></div>
-      <div class="twenty-rectangle-5"></div>
-      <a href="/twenty" class="twenty-text-wrapper-6">신용카드</a>
-      <a href="/twenty_check" class="twenty-text-wrapper-7">체크카드</a>
+     
+      <div class="card-section">
+        <!-- 신용카드 섹션 -->
+        <div class="credit-card-section">
+            <a href="/twenty" class="twenty-text-wrapper-6">신용카드</a>
+            <a href="/twenty" class="twenty-text-wrapper-6-1">신용카드</a>
+        </div>
+        
+        <!-- 체크카드 섹션 -->
+        <div class="check-card-section">
+            <a href="/twenty_check" class="twenty-text-wrapper-7">체크카드</a>
+            <a href="/twenty_check" class="twenty-text-wrapper-7-1">체크카드</a>
+        </div>
+    </div>
+    <div class = "search-box"></div>
       <div class="twenty-search-wrapper">
         <form action="/search_twenty" method="POST" class="twenty-search-form">
           <input type="text" 
@@ -56,4 +64,4 @@
     </div>
   </div>
 </div>
-<script src="/js/anima.js"></script>
+<script src="/js/twentyanima.js"></script>
