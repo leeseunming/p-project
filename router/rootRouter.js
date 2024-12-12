@@ -41,4 +41,12 @@ router.post('/search_twenty', (req, res) => {
     root.search_twenty(req, res);
 });
 
+router.post('/search_gov', (req, res) => {
+    root.search_gov(req, res);
+});
+
+router.post('/search_event', (req, res) => {
+    root.search_event(req, res);
+});
+
 module.exports = router;
