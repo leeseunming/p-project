@@ -28,12 +28,12 @@ router.get('/gov', (req, res) => {
     root.gov(req, res); // personal 페이지 처리
 });
 
-router.get('/personal-check', (req, res) => {
-    root.personalCheck(req, res)
+router.get('/gov_check', (req, res) => {
+    root.govCheck(req, res)
 });
 
-router.get('/gov-check', (req, res) => {
-    root.govCheck(req, res)
+router.get('/personal-check', (req, res) => {
+    root.personalCheck(req, res)
 });
 
 // 검색 처리

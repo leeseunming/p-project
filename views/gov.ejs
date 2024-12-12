@@ -1,12 +1,16 @@
 <div class="twenty">
   <div class="twenty-page">
     <div class="twenty-overlap">
-      <div class="twenty-rectangle"></div>
       <div class="twenty-group">
         <% cards.forEach(card => { %>
         <div class="twenty-overlap-group">
+          <!-- 카드 이미지 -->
           <img class="twenty-image" src="<%= card.image_url || 'img/card-placeholder.png' %>" alt="카드 이미지" />
+
+          <!-- 카드 이름 -->
           <div class="twenty-text-wrapper"><%= card.card_name %></div>
+
+          <!-- 카드 세부 정보 -->
           <div class="twenty-div">
             <div class="twenty-overlap-2">
               <p class="twenty-p">
@@ -18,11 +22,13 @@
                 <span class="twenty-text-wrapper-2"><%= card.annual_fee %></span>
               </p>
               <div class="twenty-rectangle-2"></div>
-              <div class="twenty-text-wrapper-4">상세보기</div>
+              <a href="<%= card.detail_url %>" class="twenty-text-wrapper-4" style="text-decoration: none; color: inherit;">상세보기</a>
             </div>
+
+            <!-- 혜택 표시 -->
             <div class="twenty-text-wrapper-5">주요 혜택</div>
             <div class="twenty-element-CGV">
-              <% card.benefit.split(',').forEach(benefit => { %>
+              <% card.benefit.split(';').forEach(benefit => { %>
               <div class="twenty-benefit-item"><%= benefit.trim() %></div>
               <% }); %>
             </div>
@@ -30,27 +36,32 @@
         </div>
         <% }); %>
       </div>
-      <div class="twenty-rectangle-3"></div>
-      <div class="twenty-rectangle-4"></div>
-      <div class="twenty-rectangle-5"></div>
-      <div class="twenty-text-wrapper-6">
-        <a href="/gov">신용카드</a>
-      </div>
-      <div class="twenty-text-wrapper-7">
-        <a href="/gov-check">체크카드</a>
-      </div>
+     
+      <div class="card-section">
+        <!-- 신용카드 섹션 -->
+        <div class="credit-card-section">
+            <a href="/gov" class="gov-text-wrapper-6">신용카드</a>
+            <a href="/gov" class="gov-text-wrapper-6-1">신용카드</a>
+        </div>
+        
+        <!-- 체크카드 섹션 -->
+        <div class="check-card-section">
+            <a href="/gov_check" class="gov-text-wrapper-7">체크카드</a>
+            <a href="/gov_check" class="gov-text-wrapper-7-1">체크카드</a>
+        </div>
+    </div>
+    <div class = "search-box"></div>
       <div class="twenty-search-wrapper">
-        <form class="twenty-search-form" action="/search" method="post">
-          <input 
-            class="twenty-search-input" 
-            type="search" 
-            placeholder="찾고싶은 카드" 
-            name="search"
-            aria-label="Search"
-          />
-          <button class="twenty-search-button" type="submit">검색</button>
-        </form>
+        <form action="/search_gov" method="POST" class="twenty-search-form">
+          <input type="text" 
+                 name="search" 
+                 class="twenty-search-input" 
+                 placeholder="검색어를 입력하세요"
+                 value="<%= locals.searchKeyword || '' %>">
+          <button type="submit" class="twenty-search-button">검색</button>
+      </form>
       </div>
     </div>
   </div>
 </div>
+<script src="/js/govanima.js"></script>

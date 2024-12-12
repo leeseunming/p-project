@@ -9,6 +9,13 @@
 body {
   font-family: 'GmarketSansMedium', sans-serif;
 }
+.static{
+  position:fixed;
+  background-color:#fcfcfc;
+  width:50000px;
+  height:97px;
+  
+}
 
 .main {
   background-color: #f4f4f4fc;
@@ -22,21 +29,41 @@ body {
   background-color: #f4f4f4fc;
   overflow: hidden;
   width: 1440px;
-  min-height: 3124px;  /* 최소 높이 설정 */
-  height: 4400px;;        /* 높이 자동 조절 */
+  min-height: 1000px;
+  height: auto;
   position: relative;
-  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
+  padding-bottom: 50px;
+  overflow: visible;
+  display: flex;        /* flex 추가 */
+  flex-direction: column;
+}
+
+.main .bottom-space {
+  position: relative;
+  width: 100%;
+  height: 100px;  /* 원하는 여백 크기 */
+  clear: both;
 }
 
 .main .div .home-content2 {
-  position: absolute;
+  position: relative;
   width: 1440px;
-  min-height: 2845px;  /* 최소 높이 설정 */
-  height: 5000px;        /* 높이 자동 조절 */
+  min-height: 1000px;
+  height: auto;
   top: 0px;
   left: 0;
-  background-color: #f7f7f7;
-  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
+  padding-bottom: 50px;
+  margin-bottom: 50px;  /* margin-bottom 추가 */
+  display: flex;        /* flex 추가 */
+  flex-direction: column;
+}
+
+.main .bottom-space {
+  width: 100%;
+  height: 100px;  /* 원하는 여백 크기 */
+  margin-top: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
 }
 
 .main .overlap {
@@ -865,10 +892,11 @@ body {
   background-color: #f4f4f4fc;
   overflow: hidden;
   width: 1440px;
-  min-height: 3183px;  /* 최소 높이 설정 */
-  height: 4400px;        /* 높이 자동 조절 */
+  min-height: 1000px;  /* 최소 높이 설정 */
+  height: auto;        /* 높이 자동 조절 */
   position: relative;
   padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
+  overflow:visible;
 }
 
 .twenty .twenty-overlap {
@@ -1068,9 +1096,15 @@ body {
   width: 100%;
   text-align: center;
   padding: 3px 0;
-  white-space: nowrap;
+  white-space: pre-wrap;      /* nowrap 대신 pre-wrap 사용 */
+  overflow-wrap: break-word;  /* 긴 단어 줄바꿈 */
+  word-break: keep-all;       /* 한글 단어 단위로 줄바꿈 */
 }
 
+.twenty .gov-text-wrapper-6,
+.twenty .gov-text-wrapper-7,
+.twenty .gov-text-wrapper-6-1,
+.twenty .gov-text-wrapper-7-1,
 .twenty .twenty-text-wrapper-6,
 .twenty .twenty-text-wrapper-7,
 .twenty .twenty-text-wrapper-6-1,
@@ -1090,7 +1124,8 @@ body {
 }
 
 /* 신용카드 활성화 스타일 */
-.twenty .twenty-text-wrapper-6 {
+.twenty .twenty-text-wrapper-6,
+.twenty .gov-text-wrapper-6 {
     background: #ffffff;
     border-radius: 20px 20px 0px 0px;
     height: 102px;
@@ -1099,7 +1134,8 @@ body {
     color: #000000;
 }
 
-.twenty .twenty-text-wrapper-7 {
+.twenty .twenty-text-wrapper-7,
+.twenty .gov-text-wrapper-7 {
     border-radius: 20px 20px 0px 0px;
     background-color: #fcdf7f;
     height: 91px;
@@ -1109,7 +1145,8 @@ body {
 }
 
 /* 체크카드 활성화 스타일 */
-.twenty .twenty-text-wrapper-6-1 {
+.twenty .twenty-text-wrapper-6-1,
+.twenty .gov-text-wrapper-6-1 {
     background: #ffffff;
     border-radius: 20px 20px 0px 0px;
     height: 91px;
@@ -1119,7 +1156,8 @@ body {
     display: none;
 }
 
-.twenty .twenty-text-wrapper-7-1 {
+.twenty .twenty-text-wrapper-7-1,
+.twenty .gov-text-wrapper-7-1 {
     border-radius: 20px 20px 0px 0px;
     background-color: #F9c20B;
     height: 102px;
@@ -1128,26 +1166,36 @@ body {
     color: #000000;
     display: none;
 }
+
 body[data-page="twenty"] .twenty-text-wrapper-6,
-body[data-page="twenty"] .twenty-text-wrapper-7 {
+body[data-page="twenty"] .twenty-text-wrapper-7,
+body[data-page="gov"] .gov-text-wrapper-6, 
+body[data-page="gov"] .gov-text-wrapper-7{
     display: flex;
 }
 
 body[data-page="twenty"] .twenty-text-wrapper-6-1,
-body[data-page="twenty"] .twenty-text-wrapper-7-1 {
+body[data-page="twenty"] .twenty-text-wrapper-7-1,
+body[data-page="gov"] .gov-text-wrapper-6-1,
+body[data-page="gov"] .gov-text-wrapper-7-1 {
     display: none;
 }
 
 /* 체크카드 페이지(/twenty_check)일 때의 스타일 */
 body[data-page="twenty_check"] .twenty-text-wrapper-6,
-body[data-page="twenty_check"] .twenty-text-wrapper-7 {
+body[data-page="twenty_check"] .twenty-text-wrapper-7,
+body[data-page="gov_check"] .gov-text-wrapper-6,
+body[data-page="gov_check"] .gov-text-wrapper-7 {
     display: none;
 }
 
 body[data-page="twenty_check"] .twenty-text-wrapper-6-1,
-body[data-page="twenty_check"] .twenty-text-wrapper-7-1 {
+body[data-page="twenty_check"] .twenty-text-wrapper-7-1,
+body[data-page="gov_check"] .gov-text-wrapper-6-1
+body[data-page="gov_check"] .gov-text-wrapper-7-1 {
     display: flex;
 }
+
 .twenty .twenty-rectangle-6 {
   position: absolute;
   width: 863px;
@@ -1304,26 +1352,23 @@ body[data-page="twenty_check"] .twenty-text-wrapper-7-1 {
 }
 
 .twenty-page .twenty-overlap {
-  position: absolute;
+  position: relative;
   width: 1440px;
-  min-height: 2845px;  /* 최소 높이 설정 */
-  height: 4400px;        /* 높이 자동 조절 */
-  top: 97px;
-  left: 0;
+  min-height: 100vh;
+  height: auto;
+  margin-top: 97px;
   background-color: #f7f7f7;
-  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
+  padding-bottom: 50px;
 }
 
 .twenty-page .twenty-rectangle {
-  position: absolute;
+  position: relative;
   width: 1181px;
-  min-height: 2396px;  /* 최소 높이 설정 */
-  height: 3900px;        /* 높이 자동 조절 */
-  top: 225px;
-  left: 135px;
+  height: auto;
+  margin: 225px auto 50px;
   background-color: #ffffff;
   border-radius: 0px 50px 50px 50px;
-  padding-bottom: 50px;  /* 내용이 끝나는 부분에 여백 추가 */
+  padding: 20px;
 }
 
 .twenty-page .twenty-group {
@@ -1426,7 +1471,7 @@ body[data-page="twenty_check"] .twenty-text-wrapper-7-1 {
   align-items: center;     /* 수직 중앙 정렬 */
   justify-content: center; /* 수평 중앙 정렬 */
   text-align: center;      /* 텍스트 자체도 중앙 정렬 */
-  margin-left: 50px;
+  margin-left: 51px;
 }
 
 .twenty-page .twenty-div-2 {
@@ -1490,9 +1535,9 @@ body[data-page="twenty_check"] .twenty-text-wrapper-7-1 {
 
 .twenty-page .twenty-element-CGV {
   position: absolute;
-  width: 644px;
+  width: 713px;
   top: 88px;
-  left: 28px;
+  left: -5px;
   font-family: 'GmarketSansMedium', sans-serif;
   font-weight: 800;
   color: #626262;
@@ -1765,5 +1810,5 @@ body[data-page="/event"] .rectangle-26 {
   position: relative;
   left: 0;  /* -27px에서 0으로 변경 */
   transform: translateX(-50%);  /* 가운데 정렬을 위해 추가 */
-  margin-left: 128px;  /* 가운데 정렬을 위해 추가 */
+  margin-left: 129px;  /* 가운데 정렬을 위해 추가 */
 }

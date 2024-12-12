@@ -6,8 +6,10 @@
 }
 html,
 body {
+  background-color:#F4F4F4FC;
   margin: 0px;
   height: 100%;
+  padding-bottom: 90px;
 }
 /* a blue color as a generic focus style */
 button:focus-visible {
