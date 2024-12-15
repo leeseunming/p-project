@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // URL에 따라 body에 data-page 속성 추가
     const currentPath = window.location.pathname;
-    if (currentPath === '/gov') {
+    if (currentPath === '/gov' || currentPath === '/search_gov') {
         document.body.setAttribute('data-page', 'gov');
     } else if (currentPath === '/gov_check') {
         document.body.setAttribute('data-page', 'gov_check');

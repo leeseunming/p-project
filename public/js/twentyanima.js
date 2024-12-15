@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // URL에 따라 body에 data-page 속성 추가
     const currentPath = window.location.pathname;
-    if (currentPath === '/twenty') {
+    if (currentPath === '/twenty' || currentPath === '/search_twenty') {
         document.body.setAttribute('data-page', 'twenty');
     } else if (currentPath === '/twenty_check') {
         document.body.setAttribute('data-page', 'twenty_check');
