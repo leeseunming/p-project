@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // URL에 따라 body에 data-page 속성 추가
     const currentPath = window.location.pathname;
-    if (currentPath === '/event') {
+    if (currentPath === '/event' || currentPath === '/search_event') {
         document.body.setAttribute('data-page', 'event');
     } else if (currentPath === '/event') {
         document.body.setAttribute('data-page', 'event');

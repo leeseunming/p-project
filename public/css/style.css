@@ -1771,6 +1771,10 @@ body[data-page="twenty_check"] .rectangle-23 {
   border-bottom: 4px solid #000000;
 }
 
+body[data-page="search_twenty"] .rectangle-23 {
+  border-bottom: 4px solid #000000;
+}
+
 /* 정부 지원 카드 */
 body[data-page="gov"] .rectangle-24 {
   border-bottom: 4px solid #000000;
